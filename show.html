@@ -301,7 +301,7 @@
         .specs {
             background-color: white;
             border-radius: 8px;
-            padding: 25px;
+            padding:5px 2px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
         
@@ -322,7 +322,7 @@
         }
         
         .specs-table td {
-            padding: 12px 15px;
+            padding: 10px 3px;
             border-bottom: 1px solid #dee2e6;
         }
         
@@ -335,19 +335,20 @@
         .finance-options {
             margin-top: 40px;
             background-color: var(--light);
-            padding: 20px;
+            padding: 5px;
             border-radius: 8px;
         }
         
         .finance-calculator {
             display: flex;
-            gap: 15px;
+            gap: 3px;
             margin-top: 15px;
+            padding: 0;
         }
         
         .finance-calculator select, 
         .finance-calculator input {
-            padding: 10px;
+            padding: 5px;
             border: 1px solid #ced4da;
             border-radius: 4px;
         }
@@ -358,7 +359,7 @@
         }
         
         .similar-bikes {
-            margin-top: 50px;
+            margin-top: 30px;
         }
         
         .similar-bikes h2 {
@@ -369,7 +370,7 @@
         .bike-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 10px;
         }
         
         .bike-card {
@@ -386,7 +387,7 @@
         
         .bike-card img {
             width: 100%;
-            height: 180px;
+            height: auto;
             object-fit: cover;
         }
         
@@ -502,10 +503,10 @@
             <div class="gallery" style="width:100%;height:auto;">
                 <img src="img/bike221.png" alt="2023 Harley-Davidson Road Glide Special" class="main-image" style="width:100%;height:auto;">
                 <div class="thumbnail-container" style="">
-                    <img src="img/moto22.png" alt="Thumbnail 1" class="thumbnail" style="width:65px;height:50px;">
-                    <img src="img/moto23.png" alt="Thumbnail 2" class="thumbnail" style="width:65px;height:50px;">
-                    <img src="img/moto3232.png" alt="Thumbnail 3" class="thumbnail" style="width:65px;height:50px;">
-                    <img src="img/moto23.png" alt="Thumbnail 4" class="thumbnail" style="width:65px;height:50px;">
+                    <img src="img/moto22.png" alt="Thumbnail 1" class="thumbnail" style="width:55px;height:40px;">
+                    <img src="img/moto23.png" alt="Thumbnail 2" class="thumbnail" style="width:55px;height:40px;">
+                    <img src="img/moto3232.png" alt="Thumbnail 3" class="thumbnail" style="width:55px;height:40px;">
+                    <img src="img/moto23.png" alt="Thumbnail 4" class="thumbnail" style="width:55px;height:40px">
                 </div>
             </div>
             
@@ -524,7 +525,7 @@
                     <button class="btn4 btn-secondary"><a href="online_booking.php">Book Now</a> </button>
                 </div>
                 
-                <div class="features" style="padding: 5px;">
+                <div class="features">
                     <h3>Key Features</h3>
                     <ul class="feature-list">
                         <li><i class="fas fa-check"></i> Milwaukee-Eight® 117 engine</li>
@@ -642,8 +643,9 @@
                     <option>7.9% APR</option>
                     <option>8.9% APR</option>
                 </select>
-                <input type="number" style="width:120px;" placeholder="payment down" value="500">
+
             </div>
+                <input type="number" style="width:90px; margin-top: 5px;" value="500">
             
             <div class="finance-result">
                 Estimated Payment: <span style="color: var(--primary);">$429/month</span>
