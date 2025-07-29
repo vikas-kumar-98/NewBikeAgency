@@ -448,6 +448,20 @@ body {
     }
 /*End of navigation part*/
 
+/*slider image*/
+.slide-1 {
+    background-image: url('../img/bike22.png');
+    }
+
+.slide-2 {
+    background-image: url('../img/bike3232.jpg');
+    }
+
+ .slide-3 {
+      background-image: url('../img/bikedealss.webp');
+  }
+
+/*End slider image*/
 
 /*Start bike show */
 /*Show bike slide*/
