@@ -231,10 +231,9 @@
 
 
 /*Index part goes here....*/
-/*Start slider image*/
 
 /* ==================== */
-/* Existing CSS (unchanged) */
+/* Existing Slider Styles */
 /* ==================== */
 .header2 {
     position: relative;
@@ -280,17 +279,16 @@
 
 .header-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     height: 80%;
     display: flex;
     align-items: center;
     color: white;
-    border: 1px solid red;
     padding-left: 120px;
 }
 
 .hero-text {
-    max-width: 900px;
+    max-width: 600px;
 }
 
 .hero-text h1 {
@@ -337,11 +335,29 @@
 }
 
 /* ==================== */
-/* Media Queries */
+/* Responsive Media Queries */
 /* ==================== */
 
-/* Large tablets and small laptops (1024px and below) */
-@media (max-width: 1024px) {
+/* Large desktops and laptops (1440px and up) */
+@media (min-width: 1440px) {
+    .hero-text {
+        max-width: 700px;
+    }
+}
+
+/* Laptops and small desktops (1024px to 1439px) */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .header-content {
+        padding-left: 100px;
+    }
+}
+
+/* Landscape tablets and small laptops (768px to 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .header2 {
+        min-height: 550px;
+    }
+    
     .header-content {
         padding-left: 80px;
     }
@@ -352,53 +368,68 @@
     
     .hero-text p {
         font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .btn-group {
+        gap: 1.2rem;
+        margin-top: 1.8rem;
     }
 }
 
-/* Tablets (768px and below) */
-@media (max-width: 768px) {
+/* Portrait tablets and large phones (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
     .header2 {
         min-height: 500px;
     }
     
     .header-content {
         padding-left: 60px;
-        height: 100%;
+        padding-right: 60px;
         justify-content: center;
+        text-align: center;
     }
     
     .hero-text {
-        max-width: 600px;
-        text-align: center;
-        padding: 0 20px;
+        max-width: 100%;
     }
     
     .hero-text h1 {
         font-size: 2.5rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.05rem;
+        margin-bottom: 1.8rem;
     }
     
     .btn-group {
         justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
     }
     
     .slider-controls {
-        bottom: 1.5rem;
+        bottom: 1.8rem;
     }
 }
 
-/* Mobile devices (480px and below) */
-@media (max-width: 480px) {
+/* Small phones (425px to 575px) */
+@media (max-width: 575px) and (min-width: 376px) {
     .header2 {
-        min-height: 400px;
+        min-height: 450px;
+        height: 80vh;
     }
     
     .header-content {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: 90%;
     }
     
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin-bottom: 1rem;
     }
     
@@ -409,12 +440,44 @@
     
     .btn-group {
         flex-direction: column;
-        gap: 1rem;
-        margin-top: 1.5rem;
+        gap: 0.8rem;
+        margin-top: 1.2rem;
     }
     
     .slider-controls {
-        bottom: 1rem;
+        bottom: 1.5rem;
+    }
+}
+
+/* Extra small phones (up to 375px) */
+@media (max-width: 375px) {
+    .header2 {
+        min-height: 400px;
+        height: 70vh;
+    }
+    
+    .header-content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-text p {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .btn-group {
+        gap: 0.6rem;
+        margin-top: 1rem;
+    }
+    
+    .slider-controls {
+        bottom: 1.2rem;
     }
     
     .slider-control {
@@ -423,23 +486,35 @@
     }
 }
 
-/* Very small mobile devices (360px and below) */
-@media (max-width: 360px) {
-    .hero-text h1 {
-        font-size: 1.8rem;
+/* Very short screens (height adjustments) */
+@media (max-height: 600px) {
+    .header2 {
+        height: auto;
+        min-height: 100vh;
     }
     
-    .hero-text p {
-        font-size: 0.9rem;
-    }
-    
-    .btn-group {
-        gap: 0.8rem;
+    .header-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
 
-/*End of slider images*/
-
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-width: 900px) {
+    .header2 {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .header-content {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
 
 /*End of header part*/
 
