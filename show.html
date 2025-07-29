@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Cutting-Edge Software Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--External Css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+        /* Navigation Styles */
+.navbar {
+    background-color: white;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.3rem 0.3rem;
+  }
+        
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+       
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.5rem;
+   }
+        
+ .nav-links li {
+      position: relative;
+     }
+        
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    padding: 0.4rem .6rem;
+    border-radius: 0.7rem;
+    font-size: 18px;
+    font-weight: bold;
+    }
+        
+.nav-links a:hover {
+    color: var(--primary);
+    background-color: var(--blue);
+
+   }
+        
+.nav-links a i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    }
+        
+
+     .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.9rem;
+    color: var(--secondary);
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    }
+        
+.mobile-menu-btn:hover {
+    background-color: var(--gray-light);
+    }
+
+/* Mobile Navigation Styles */
+    @media (max-width: 992px) {
+     .nav-links {
+       position: fixed;
+       top: 50px;
+       left: -100%;
+       width: 280px;
+       height: calc(100vh - 80px);
+       background-color: white;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 2rem;
+       transition: var(--transition);
+       box-shadow: var(--shadow-lg);
+       z-index: 999;
+       overflow-y: auto;
+      }
+            
+    .nav-links.active {
+          left: 0;
+      }
+            
+    .nav-links li {
+          margin: 0;
+          width: 100%;
+          padding: 0.5rem 0;
+          border-bottom: 1px solid var(--gray-light);
+        }
+            
+    .nav-links a {
+            padding: 0.8rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+
+    .dropdown-menu {
+          position: static;
+          box-shadow: none;
+          padding: 0;
+          opacity: 1;
+          visibility: visible;
+          display: none;
+          background-color: var(--gray-light);
+          border-radius: 0;
+          width: 100%;
+       }
+            
+    .dropdown-menu.active {
+        display: block;
+      }
+            
+    .dropdown-menu li {
+        padding: 0.8rem 1rem;
+        }
+            
+    .dropdown > a::after {
+          content: '\f078';
+          font-family: 'Font Awesome 6 Free';
+          font-weight: 900;
+          margin-left: 5px;
+          transition: transform 0.3s;
+         }
+            
+     .dropdown.active > a::after {
+        transform: rotate(180deg);
+        }
+            
+    .mobile-menu-btn {
+        display: block;
+        }
+    }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .gallery {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .main-image {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .thumbnail-container {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .thumbnail {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border: 2px solid transparent;
+        }
+        
+        .thumbnail:hover {
+            transform: scale(1.05);
+            border-color: var(--primary);
+        }
+        
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: var(--gray);
+            margin-bottom: 10px;
+        }
+        
+        .price-container {
+            margin: 1px 0;
+        }
+        
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .msrp {
+            text-decoration: line-through;
+            color: var(--gray);
+            margin-right: 10px;
+        }
+        
+        .save {
+            color: green;
+            font-weight: bold;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        
+        .btn4 {
+            padding: 7px 8px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            flex: 2;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c1121f;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+            flex: 1;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #14213d;
+        }
+        
+        .features {
+            margin-bottom: 10px;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 7px;
+        }
+        
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .feature-list i {
+            color: var(--primary);
+        }
+        
+        .specs {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .specs h3 {
+            margin-top: 0;
+            color: var(--secondary);
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 10px;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .specs-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .specs-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .specs-table td:first-child {
+            font-weight: bold;
+            width: 40%;
+            color: var(--secondary);
+        }
+        
+        .finance-options {
+            margin-top: 40px;
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .finance-calculator {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .finance-calculator select, 
+        .finance-calculator input {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        
+        .finance-result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        
+        .similar-bikes {
+            margin-top: 50px;
+        }
+        
+        .similar-bikes h2 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .bike-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .bike-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .bike-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .bike-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .bike-card-content {
+            padding: 15px;
+        }
+        
+        .bike-card-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .bike-card-price {
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+  .advanced-header3 {
+    display: none;
+  }
+}
+    </style>
+</head>
+<body>
+
+<header class="advanced-header3">
+    <!-- Top bar with contact information -->
+    <div class="header-top-bar3">
+        <div class="container3">
+            <div class="contact-info3">
+                <div class="contact-item3">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Ave, Suite 456, Cityville, ST 12345</span>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+1234567890">+91 7510028244</a>
+                </div>
+            </div>
+            
+            <div class="social-media2">
+                <a href="https://facebook.com/yourcompany" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/yourcompany" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/yourcompany" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/yourcompany" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</header>
+
+<!-- Navigation -->
+
+ <nav class="navbar">
+   <div class="nav-container">
+    <a href="index.php" class="logo">
+      <img src="img/bikelog.png" alt="TechNova Logo">
+        <span class="logo-text">BholeBike</span>
+    </a>
+            
+   <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+   </button>
+            
+   <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="new-bike.html">New Bike</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="online-booking.html">Online Booking</a></li>
+      <li><a href="contact.html">Contact Us</a></li>             
+      <li><a href="gallary.html">Gallary</a></li>
+    </ul>
+  </div>
+ </nav>
+
+
+
+
+<!-- Main Content -->
+    <main class="container">
+       
+        
+        <div class="product-container">
+            <div class="gallery" style="width:100%;height:auto;">
+                <img src="img/bike221.png" alt="2023 Harley-Davidson Road Glide Special" class="main-image" style="width:100%;height:auto;">
+                <div class="thumbnail-container" style="">
+                    <img src="img/moto22.png" alt="Thumbnail 1" class="thumbnail" style="width:90px;height:60px;">
+                    <img src="img/moto23.png" alt="Thumbnail 2" class="thumbnail" style="width:90px;height:60px;">
+                    <img src="img/moto3232.png" alt="Thumbnail 3" class="thumbnail" style="width:90px;height:60px;">
+                    <img src="img/moto23.png" alt="Thumbnail 4" class="thumbnail" style="width:90px;height:60px;">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1 class="title">2023 Harley-Davidson Road Glide Special</h1>
+                <p class="subtitle">The ultimate bagger with Milwaukee-Eight® 117 engine and shark-nose fairing</p>
+                
+                <div class="price-container">
+                    <span class="price">$27,999</span>
+                    <span class="msrp">$29,999</span>
+                    <span class="save">Save $2,000</span>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn4 btn-primary"><i class="fas fa-phone-alt"></i> Contact Us</button>
+                    <button class="btn4 btn-secondary"><a href="online_booking.php">Book Now</a> </button>
+                </div>
+                
+                <div class="features" style="padding: 5px;">
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Milwaukee-Eight® 117 engine</li>
+                        <li><i class="fas fa-check"></i> Shark-nose fairing</li>
+                        <li><i class="fas fa-check"></i> Boom!™ Box GTS infotainment</li>
+                        <li><i class="fas fa-check"></i> Reflex™ Defensive Rider Systems</li>
+                        <li><i class="fas fa-check"></i> LED lighting</li>
+                        <li><i class="fas fa-check"></i> 6.5-gallon fuel capacity</li>
+                        <li><i class="fas fa-check"></i> 2-year unlimited mileage warranty</li>
+                        <li><i class="fas fa-check"></i> Color-matched hard saddlebags</li>
+                        <li><i class="fas fa-check"></i> Color-matched hard saddlebags</li>
+                        <li><i class="fas fa-check"></i> Color-matched hard saddlebags</li>
+                        <li><i class="fas fa-check"></i> Color-matched hard saddlebags</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="specs">
+            <h3 class="title2">Technical Specifications</h3>
+            <table class="specs-table">
+                <tr>
+                    <td>Engine</td>
+                    <td>Milwaukee-Eight® 117, air/oil-cooled, 45-degree V-twin</td>
+                </tr>
+                <tr>
+                    <td>Displacement</td>
+                    <td>117 cu in (1,923 cc)</td>
+                </tr>
+                <tr>
+                    <td>Bore x Stroke</td>
+                    <td>4.075 in x 4.5 in (103.5 mm x 114.3 mm)</td>
+                </tr>
+                <tr>
+                    <td>Compression Ratio</td>
+                    <td>10.2:1</td>
+                </tr>
+                <tr>
+                    <td>Fuel System</td>
+                    <td>Electronic Sequential Port Fuel Injection (ESPFI)</td>
+                </tr>
+                <tr>
+                    <td>Transmission</td>
+                    <td>6-speed Cruise Drive®</td>
+                </tr>
+                <tr>
+                    <td>Final Drive</td>
+                    <td>Belt</td>
+                </tr>
+                <tr>
+                    <td>Frame</td>
+                    <td>Tubular mild steel, rectangular section backbone, twin downtubes</td>
+                </tr>
+                <tr>
+                    <td>Suspension (Front)</td>
+                    <td>Dual bending valve, 49 mm, preload adjustable</td>
+                </tr>
+                <tr>
+                    <td>Suspension (Rear)</td>
+                    <td>Piggyback monoshock, hand-adjustable preload</td>
+                </tr>
+                <tr>
+                    <td>Brakes (Front)</td>
+                    <td>Dual 320 mm floating discs, 4-piston fixed calipers, ABS</td>
+                </tr>
+                <tr>
+                    <td>Brakes (Rear)</td>
+                    <td>300 mm fixed disc, 2-piston floating caliper, ABS</td>
+                </tr>
+                <tr>
+                    <td>Tires (Front)</td>
+                    <td>130/60B19 61H</td>
+                </tr>
+                <tr>
+                    <td>Tires (Rear)</td>
+                    <td>180/55B18 80H</td>
+                </tr>
+                <tr>
+                    <td>Wheelbase</td>
+                    <td>64 in (1,625 mm)</td>
+                </tr>
+                <tr>
+                    <td>Seat Height (Unladen)</td>
+                    <td>26.7 in (680 mm)</td>
+                </tr>
+                <tr>
+                    <td>Fuel Capacity</td>
+                    <td>6.5 gal (24.6 L)</td>
+                </tr>
+                <tr>
+                    <td>Dry Weight</td>
+                    <td>826 lb (375 kg)</td>
+                </tr>
+                <tr>
+                    <td>Colors Available</td>
+                    <td>Vivid Black, Billiard Red, Stone Washed White Pearl, Deadwood Green</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="finance-options">
+            <h3 class="title2">Finance Options</h3>
+            <p>Estimate your monthly payment with our financing calculator:</p>
+            
+            <div class="finance-calculator">
+                <select>
+                    <option>60 months</option>
+                    <option>48 months</option>
+                    <option>36 months</option>
+                    <option>24 months</option>
+                </select>
+                <select>
+                    <option>5.9% APR</option>
+                    <option>6.9% APR</option>
+                    <option>7.9% APR</option>
+                    <option>8.9% APR</option>
+                </select>
+                <input type="number" placeholder="Down Payment" value="5000">
+            </div>
+            
+            <div class="finance-result">
+                Estimated Payment: <span style="color: var(--primary);">$429/month</span>
+            </div>
+            
+            <p style="margin-top: 15px; font-size: 14px;">*Calculations are estimates only. Actual terms may vary based on credit approval.</p>
+        </div>
+        
+        <div class="similar-bikes" style="margin-bottom: 10px;">
+            <h2 class="title2">Similar Motorbikes</h2>
+            <div class="bike-grid">
+                <div class="bike-card">
+                    <img src="img/bike221.png" alt="Harley-Davidson Street Glide">
+                    <div class="bike-card-content">
+                        <div class="bike-card-title">2023 Harley-Davidson Street Glide</div>
+                        <div class="bike-card-price">$25,999</div>
+                    </div>
+                </div>
+                <div class="bike-card">
+                    <img src="img/bike221.png" alt="Indian Challenger">
+                    <div class="bike-card-content">
+                        <div class="bike-card-title">2023 Indian Challenger</div>
+                        <div class="bike-card-price">Rs 1,21,900</div>
+                    </div>
+                </div>
+                <div class="bike-card">
+                    <img src="img/bike221.png" alt="BMW R 18 Transcontinental">
+                    <div class="bike-card-content">
+                        <div class="bike-card-title">2023 BMW R 18 Transcontinental</div>
+                        <div class="bike-card-price">Rs 1,21,900</div>
+                    </div>
+                </div>
+                <div class="bike-card">
+                    <img src="img/bike221.png" alt="Honda Gold Wing">
+                    <div class="bike-card-content">
+                        <div class="bike-card-title">2023 Honda Gold Wing</div>
+                        <div class="bike-card-price">Rs 1,21,900</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+
+<!-- End main -->
+<!-- Footer -->
+  <footer>
+    <div class="footer-wave"></div>
+      <div class="footer-container">
+          <div class="footer-logo-col">
+            <a href="#" class="footer-logo">
+                <img src="img/bikelog.png" alt="TechNova Logo">
+                <span class="footer-logo-text">BikeWalaa</span>
+            </a>
+            <p class="footer-about">
+              <strong>BholeBike</strong>Founded in 2008 by racing champion Derek Velocity, our agency began as a small boutique specializing in high-performance sport bikes. What started as a one-man operation in a garage has grown into a 20,000 sq ft state-of-the-art facility representing the world's finest motorcycle brands.
+
+ 
+            </p>
+            <div class="social-links">
+             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+            
+        <div class="footer-col">
+         <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Solutions</a></li>
+           <li><a href="#">Case Studies</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+             <ul class="footer-links">
+              <li><a href="#">Bike Service</a></li>
+              <li><a href="#">New Bike</a></li>
+              <li><a href="#">Sport Bike</a></li>
+              <li><a href="#">Latest Bike</a></li>
+              <li><a href="#">team</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Contact Us</h3>
+           <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Park, Silicon Valley, CA 94025</p>
+            <p><i class="fas fa-phone-alt"></i> *91 7510028244</p>
+            <p><i class="fas fa-envelope"></i> bholebike@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2023 TechNova Solutions. All rights reserved.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+    </footer>
+    <div class="smart-call-button" id="callButton">
+        <i class="fas fa-phone"></i>
+        <div class="call-confirmation" id="callConfirmation">Calling...</div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Dropdown Menu Toggle for Mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('a');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 992) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    menu.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                            otherDropdown.querySelector('.dropdown-menu').classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992 && !e.target.closest('.dropdown') && !e.target.closest('.mobile-menu-btn')) {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                    dropdown.querySelector('.dropdown-menu').classList.remove('active');
+                });
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        const navItems = document.querySelectorAll('.nav-links li:not(.dropdown) a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // Slider Functionality
+        const slides = document.querySelectorAll('.slide');
+        const controls = document.querySelectorAll('.slider-control');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            controls.forEach(control => control.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            controls[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = currentSlide + 1;
+            if (next >= slides.length) next = 0;
+            showSlide(next);
+        }
+
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+
+        // Initialize slider
+        showSlide(0);
+        startSlider();
+
+        // Add click events to controls
+        controls.forEach((control, index) => {
+            control.addEventListener('click', () => {
+                stopSlider();
+                showSlide(index);
+                startSlider();
+            });
+        });
+
+        // Pause on hover
+        const slider = document.querySelector('.slider');
+        slider.addEventListener('mouseenter', stopSlider);
+        slider.addEventListener('mouseleave', startSlider);
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Testimonial data
+    const testimonials = [
+        {
+            text: "This product completely transformed my workflow. The ease of use and powerful features have saved me countless hours of work.",
+            author: "Sarah Johnson",
+            position: "Marketing Director",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/43.jpg"
+        },
+        {
+            text: "Excellent customer service and a top-notch product. The team was incredibly responsive to our needs.",
+            author: "Michael Chen",
+            position: "CTO",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+            text: "I was skeptical at first, but after using it for just one week, I was completely sold. The ROI has been phenomenal.",
+            author: "Emily Rodriguez",
+            position: "Project Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/65.jpg"
+        },
+        {
+            text: "The best solution in its category. We evaluated several competitors but none came close to this product.",
+            author: "David Wilson",
+            position: "Operations Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/75.jpg"
+        },
+        {
+            text: "Simple to set up and incredibly powerful. We've automated processes that used to take days, now completed in minutes.",
+            author: "Lisa Thompson",
+            position: "Sales Executive",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/women/22.jpg"
+        },
+        {
+            text: "The support team is outstanding. They helped us customize the solution to our exact business needs.",
+            author: "Robert Garcia",
+            position: "IT Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/46.jpg"
+        }
+    ];
+
+    const wrapper = document.querySelector('.testimonial-wrapper');
+    const dotsContainer = document.querySelector('.testimonial-dots');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentIndex = 0;
+    let itemsPerSlide = 1; // Default for mobile
+    
+    // Determine items per slide based on screen size
+    function updateItemsPerSlide() {
+        if (window.innerWidth >= 992) {
+            itemsPerSlide = 3; // Desktop
+        } else if (window.innerWidth >= 768) {
+            itemsPerSlide = 2; // Tablet
+        } else {
+            itemsPerSlide = 1; // Mobile
+        }
+        updateTestimonial();
+    }
+    
+    // Create testimonial items
+    testimonials.forEach((testimonial, index) => {
+        // Create testimonial item
+        const item = document.createElement('div');
+        item.className = 'testimonial-item';
+        
+        // Create rating stars
+        let stars = '';
+        for (let i = 0; i < 5; i++) {
+            stars += i < testimonial.rating 
+                ? '<i class="fas fa-star"></i>' 
+                : '<i class="far fa-star"></i>';
+        }
+        
+        item.innerHTML = `
+            <div class="testimonial-content">
+                <p class="testimonial-text">${testimonial.text}</p>
+                <div class="testimonial-author">
+                    <img src="${testimonial.image}" alt="${testimonial.author}" class="author-img">
+                    <div class="author-info">
+                        <h4>${testimonial.author}</h4>
+                        <p>${testimonial.position}</p>
+                        <div class="testimonial-rating">${stars}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        wrapper.appendChild(item);
+        
+        // Create dots (only for mobile)
+        if (window.innerWidth < 768) {
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToTestimonial(index));
+            dotsContainer.appendChild(dot);
+        }
+    });
+    
+    const items = document.querySelectorAll('.testimonial-item');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Update testimonial position
+    function updateTestimonial() {
+        const slideWidth = 100 / itemsPerSlide;
+        wrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+        
+        // Update dots (only for mobile)
+        if (window.innerWidth < 768) {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+    }
+    
+    // Go to specific testimonial
+    function goToTestimonial(index) {
+        currentIndex = index;
+        updateTestimonial();
+    }
+    
+    // Next testimonial
+    function nextTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Previous testimonial
+    function prevTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex - 1 + maxIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', nextTestimonial);
+    prevBtn.addEventListener('click', prevTestimonial);
+    
+    // Auto-rotate testimonials
+    let interval = setInterval(nextTestimonial, 5000);
+    
+    // Pause on hover
+    wrapper.addEventListener('mouseenter', () => clearInterval(interval));
+    wrapper.addEventListener('mouseleave', () => {
+        interval = setInterval(nextTestimonial, 5000);
+    });
+    
+    // Touch events for mobile swipe
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    wrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        clearInterval(interval);
+    }, {passive: true});
+    
+    wrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        interval = setInterval(nextTestimonial, 5000);
+    }, {passive: true});
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextTestimonial();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevTestimonial();
+        }
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            nextTestimonial();
+        } else if (e.key === 'ArrowLeft') {
+            prevTestimonial();
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        updateItemsPerSlide();
+        // Recreate dots if switching between mobile and desktop
+        if (window.innerWidth >= 768 && dotsContainer.children.length > 0) {
+            dotsContainer.innerHTML = '';
+        } else if (window.innerWidth < 768 && dotsContainer.children.length === 0) {
+            testimonials.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (index === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => goToTestimonial(index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+    });
+    
+    // Initialize
+    updateItemsPerSlide();
+});
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            
+            let currentIndex = 0;
+            let slideInterval;
+            const slideDuration = 3000; // 3 seconds
+            
+            // Calculate how many slides to move based on screen size
+            function getSlidesToScroll() {
+                if (window.innerWidth < 768) return 1; // Mobile
+                if (window.innerWidth < 992) return 2; // Tablet
+                if (window.innerWidth < 1200) return 3; // Small desktop
+                return 4; // Large desktop
+            }
+            
+            // Update carousel position
+            function updateCarousel() {
+                const slideWidth = slides[0].offsetWidth;
+                const slidesToShow = Math.min(getSlidesToScroll(), slides.length);
+                const scrollPosition = currentIndex * slideWidth;
+                
+                track.style.transform = `translateX(-${scrollPosition}px)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Move to next slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            }
+            
+            // Start auto-sliding
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, slideDuration);
+            }
+            
+            // Pause auto-sliding when hovering
+            track.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            // Resume auto-sliding when not hovering
+            track.addEventListener('mouseleave', startAutoSlide);
+            
+            // Dot navigation
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.getAttribute('data-index'));
+                    updateCarousel();
+                    // Reset timer when manually navigating
+                    clearInterval(slideInterval);
+                    startAutoSlide();
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                updateCarousel();
+            });
+            
+            // Initialize
+            updateCarousel();
+            startAutoSlide();
+            
+            // Touch support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                clearInterval(slideInterval);
+            }, { passive: true });
+            
+            track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                startAutoSlide();
+            }, { passive: true });
+            
+            function handleSwipe() {
+                const threshold = 50;
+                if (touchEndX < touchStartX - threshold) {
+                    // Swipe left - next
+                    currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+                } else if (touchEndX > touchStartX + threshold) {
+                    // Swipe right - previous
+                    currentIndex = Math.max(currentIndex - 1, 0);
+                }
+                updateCarousel();
+            }
+        });
+    </script>
+
+
+        <script>
+        // Simple image gallery functionality
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const mainImg = document.querySelector('.main-image');
+                mainImg.src = this.src;
+            });
+        });
+        
+        // Simple finance calculator
+        function calculatePayment() {
+            // This would be replaced with actual calculation logic
+            return 429;
+        }
+    </script>
+</body>
+</html>

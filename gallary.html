@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Cutting-Edge Software Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--External Css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+/* Navigation Styles */
+.navbar {
+    background-color: white;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.3rem 0.3rem;
+  }
+        
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+       
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.5rem;
+   }
+        
+ .nav-links li {
+      position: relative;
+     }
+        
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    padding: 0.4rem .6rem;
+    border-radius: 0.7rem;
+    font-size: 18px;
+    font-weight: bold;
+    }
+        
+.nav-links a:hover {
+    color: var(--primary);
+    background-color: var(--blue);
+
+   }
+        
+.nav-links a i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    }
+        
+
+         /* Basic styling for the advanced header */
+.advanced-header3 {
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-top-bar3 {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.container3 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info3 {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-item3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-item3 i {
+    font-size: 12px;
+}
+
+.contact-item3 a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.social-media2 {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media2 a {
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.social-media2 a:hover {
+    color: #3498db;
+}
+
+
+/* Mobile responsiveness would need to be added */
+
+     .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.9rem;
+    color: var(--secondary);
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    }
+        
+.mobile-menu-btn:hover {
+    background-color: var(--gray-light);
+    }
+
+/* Mobile Navigation Styles */
+    @media (max-width: 992px) {
+     .nav-links {
+       position: fixed;
+       top: 50px;
+       left: -100%;
+       width: 280px;
+       height: calc(100vh - 80px);
+       background-color: white;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 2rem;
+       transition: var(--transition);
+       box-shadow: var(--shadow-lg);
+       z-index: 999;
+       overflow-y: auto;
+      }
+            
+    .nav-links.active {
+          left: 0;
+      }
+            
+    .nav-links li {
+          margin: 0;
+          width: 100%;
+          padding: 0.5rem 0;
+          border-bottom: 1px solid var(--gray-light);
+        }
+            
+    .nav-links a {
+            padding: 0.8rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+         @media screen and (max-width: 768px) {
+  .advanced-header3 {
+    display: none;
+  }
+}
+
+    .dropdown-menu {
+          position: static;
+          box-shadow: none;
+          padding: 0;
+          opacity: 1;
+          visibility: visible;
+          display: none;
+          background-color: var(--gray-light);
+          border-radius: 0;
+          width: 100%;
+       }
+            
+    .dropdown-menu.active {
+        display: block;
+      }
+            
+    .dropdown-menu li {
+        padding: 0.8rem 1rem;
+        }
+            
+    .dropdown > a::after {
+          content: '\f078';
+          font-family: 'Font Awesome 6 Free';
+          font-weight: 900;
+          margin-left: 5px;
+          transition: transform 0.3s;
+         }
+            
+     .dropdown.active > a::after {
+        transform: rotate(180deg);
+        }
+            
+    .mobile-menu-btn {
+        display: block;
+        }
+    }
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+#lightbox-image {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-caption {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.lightbox-caption h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.lightbox-caption p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.lightbox-counter {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox-close:hover {
+  color: #ddd;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.lightbox-nav:hover {
+  color: #ddd;
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
+/* Add this to your existing gallery styles */
+.gallery-item {
+  cursor: pointer;
+}
+
+
+      .gallery-section {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gallery-subtitle {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background: #e9ecef;
+  color: #495057;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: #212529;
+  color: white;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 1/1;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item .item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  padding: 1.5rem 1rem 1rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .item-overlay {
+  opacity: 1;
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.load-more {
+  padding: 0.75rem 2rem;
+  background: #212529;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.load-more:hover {
+  background: #343a40;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn {
+  padding: 0.5rem;
+  background: #e9ecef;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.view-btn.active {
+  background: #212529;
+  color: white;
+}
+
+/* Lightbox styles */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-image {
+  max-height: 80vh;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.lightbox-caption {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.3);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.lightbox-nav.prev {
+  left: -70px;
+}
+
+.lightbox-nav.next {
+  right: -70px;
+}
+
+/* Masonry layout */
+.gallery-container.masonry {
+  grid-auto-rows: 10px;
+}
+
+.gallery-container.masonry .gallery-item {
+  grid-row-end: span 20;
+}
+
+.gallery-container.masonry .gallery-item.tall {
+  grid-row-end: span 30;
+}
+
+.gallery-container.masonry .gallery-item.wide {
+  grid-column-end: span 2;
+}
+
+/* Carousel layout */
+.gallery-container.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.gallery-container.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-container.carousel .gallery-item {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .gallery-container.carousel .gallery-item {
+    flex: 0 0 90%;
+  }
+}  
+    </style>
+</head>
+<body>
+
+<header class="advanced-header3">
+    <!-- Top bar with contact information -->
+    <div class="header-top-bar3">
+        <div class="container3">
+            <div class="contact-info3">
+                <div class="contact-item3">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Ave, Suite 456, Cityville, ST 12345</span>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+1234567890">+91 7510028244</a>
+                </div>
+            </div>
+            
+            <div class="social-media2">
+                <a href="https://facebook.com/yourcompany" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/yourcompany" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/yourcompany" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/yourcompany" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</header>
+
+<!-- Navigation -->
+
+ <nav class="navbar">
+   <div class="nav-container">
+    <a href="index.php" class="logo">
+      <img src="img/bikelog.png" alt="TechNova Logo">
+        <span class="logo-text">BholeBike</span>
+    </a>
+            
+   <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+   </button>
+            
+   <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="new-bike.html">New Bike</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="online-booking.html">Online Booking</a></li>
+      <li><a href="contact.html">Contact Us</a></li>             
+      <li><a href="gallary.html">Gallary</a></li>
+    </ul>
+  </div>
+ </nav>
+
+
+
+
+<!-- Main Content -->
+
+<section class="gallery-section">
+  <div class="gallery-header">
+    <h2 class="gallery-title">Visual Stories</h2>
+    <p class="gallery-subtitle">Explore our world through captivating imagery</p>
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="urban">Urban</button>
+      <button class="filter-btn" data-filter="people">People</button>
+    </div>
+  </div>
+  
+  <div class="gallery-container">
+    <!-- Gallery items will be dynamically loaded here -->
+  </div>
+  
+  <div class="gallery-controls">
+    <button class="load-more">Load More</button>
+    <div class="view-toggle">
+      <button class="view-btn grid-view active" title="Grid View">☷</button>
+      <button class="view-btn masonry-view" title="Masonry View">⧉</button>
+      <button class="view-btn carousel-view" title="Carousel View">⇼</button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="lightbox-modal">
+  <div class="lightbox-content">
+    <span class="close-lightbox">&times;</span>
+    <img src="" alt="" class="lightbox-image">
+    <div class="lightbox-caption"></div>
+    <button class="lightbox-nav prev">‹</button>
+    <button class="lightbox-nav next">›</button>
+  </div>
+</div>
+
+<!-- End main -->
+<!-- Footer -->
+  <footer>
+    <div class="footer-wave"></div>
+      <div class="footer-container">
+          <div class="footer-logo-col">
+            <a href="#" class="footer-logo">
+                <img src="img/bikelog.png" alt="TechNova Logo">
+                <span class="footer-logo-text">BikeWalaa</span>
+            </a>
+            <p class="footer-about">
+              <strong>BholeBike</strong>Founded in 2008 by racing champion Derek Velocity, our agency began as a small boutique specializing in high-performance sport bikes. What started as a one-man operation in a garage has grown into a 20,000 sq ft state-of-the-art facility representing the world's finest motorcycle brands.
+
+ 
+            </p>
+            <div class="social-links">
+             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+            
+        <div class="footer-col">
+         <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Solutions</a></li>
+           <li><a href="#">Case Studies</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+             <ul class="footer-links">
+              <li><a href="#">Bike Service</a></li>
+              <li><a href="#">New Bike</a></li>
+              <li><a href="#">Sport Bike</a></li>
+              <li><a href="#">Latest Bike</a></li>
+              <li><a href="#">team</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Contact Us</h3>
+           <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Park, Silicon Valley, CA 94025</p>
+            <p><i class="fas fa-phone-alt"></i> *91 7510028244</p>
+            <p><i class="fas fa-envelope"></i> bholebike@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2023 TechNova Solutions. All rights reserved.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+    </footer>
+    <div class="smart-call-button" id="callButton">
+        <i class="fas fa-phone"></i>
+        <div class="call-confirmation" id="callConfirmation">Calling...</div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Dropdown Menu Toggle for Mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('a');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 992) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    menu.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                            otherDropdown.querySelector('.dropdown-menu').classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992 && !e.target.closest('.dropdown') && !e.target.closest('.mobile-menu-btn')) {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                    dropdown.querySelector('.dropdown-menu').classList.remove('active');
+                });
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        const navItems = document.querySelectorAll('.nav-links li:not(.dropdown) a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // Slider Functionality
+        const slides = document.querySelectorAll('.slide');
+        const controls = document.querySelectorAll('.slider-control');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            controls.forEach(control => control.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            controls[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = currentSlide + 1;
+            if (next >= slides.length) next = 0;
+            showSlide(next);
+        }
+
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+
+        // Initialize slider
+        showSlide(0);
+        startSlider();
+
+        // Add click events to controls
+        controls.forEach((control, index) => {
+            control.addEventListener('click', () => {
+                stopSlider();
+                showSlide(index);
+                startSlider();
+            });
+        });
+
+        // Pause on hover
+        const slider = document.querySelector('.slider');
+        slider.addEventListener('mouseenter', stopSlider);
+        slider.addEventListener('mouseleave', startSlider);
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Testimonial data
+    const testimonials = [
+        {
+            text: "This product completely transformed my workflow. The ease of use and powerful features have saved me countless hours of work.",
+            author: "Sarah Johnson",
+            position: "Marketing Director",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/43.jpg"
+        },
+        {
+            text: "Excellent customer service and a top-notch product. The team was incredibly responsive to our needs.",
+            author: "Michael Chen",
+            position: "CTO",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+            text: "I was skeptical at first, but after using it for just one week, I was completely sold. The ROI has been phenomenal.",
+            author: "Emily Rodriguez",
+            position: "Project Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/65.jpg"
+        },
+        {
+            text: "The best solution in its category. We evaluated several competitors but none came close to this product.",
+            author: "David Wilson",
+            position: "Operations Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/75.jpg"
+        },
+        {
+            text: "Simple to set up and incredibly powerful. We've automated processes that used to take days, now completed in minutes.",
+            author: "Lisa Thompson",
+            position: "Sales Executive",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/women/22.jpg"
+        },
+        {
+            text: "The support team is outstanding. They helped us customize the solution to our exact business needs.",
+            author: "Robert Garcia",
+            position: "IT Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/46.jpg"
+        }
+    ];
+
+    const wrapper = document.querySelector('.testimonial-wrapper');
+    const dotsContainer = document.querySelector('.testimonial-dots');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentIndex = 0;
+    let itemsPerSlide = 1; // Default for mobile
+    
+    // Determine items per slide based on screen size
+    function updateItemsPerSlide() {
+        if (window.innerWidth >= 992) {
+            itemsPerSlide = 3; // Desktop
+        } else if (window.innerWidth >= 768) {
+            itemsPerSlide = 2; // Tablet
+        } else {
+            itemsPerSlide = 1; // Mobile
+        }
+        updateTestimonial();
+    }
+    
+    // Create testimonial items
+    testimonials.forEach((testimonial, index) => {
+        // Create testimonial item
+        const item = document.createElement('div');
+        item.className = 'testimonial-item';
+        
+        // Create rating stars
+        let stars = '';
+        for (let i = 0; i < 5; i++) {
+            stars += i < testimonial.rating 
+                ? '<i class="fas fa-star"></i>' 
+                : '<i class="far fa-star"></i>';
+        }
+        
+        item.innerHTML = `
+            <div class="testimonial-content">
+                <p class="testimonial-text">${testimonial.text}</p>
+                <div class="testimonial-author">
+                    <img src="${testimonial.image}" alt="${testimonial.author}" class="author-img">
+                    <div class="author-info">
+                        <h4>${testimonial.author}</h4>
+                        <p>${testimonial.position}</p>
+                        <div class="testimonial-rating">${stars}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        wrapper.appendChild(item);
+        
+        // Create dots (only for mobile)
+        if (window.innerWidth < 768) {
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToTestimonial(index));
+            dotsContainer.appendChild(dot);
+        }
+    });
+    
+    const items = document.querySelectorAll('.testimonial-item');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Update testimonial position
+    function updateTestimonial() {
+        const slideWidth = 100 / itemsPerSlide;
+        wrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+        
+        // Update dots (only for mobile)
+        if (window.innerWidth < 768) {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+    }
+    
+    // Go to specific testimonial
+    function goToTestimonial(index) {
+        currentIndex = index;
+        updateTestimonial();
+    }
+    
+    // Next testimonial
+    function nextTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Previous testimonial
+    function prevTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex - 1 + maxIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', nextTestimonial);
+    prevBtn.addEventListener('click', prevTestimonial);
+    
+    // Auto-rotate testimonials
+    let interval = setInterval(nextTestimonial, 5000);
+    
+    // Pause on hover
+    wrapper.addEventListener('mouseenter', () => clearInterval(interval));
+    wrapper.addEventListener('mouseleave', () => {
+        interval = setInterval(nextTestimonial, 5000);
+    });
+    
+    // Touch events for mobile swipe
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    wrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        clearInterval(interval);
+    }, {passive: true});
+    
+    wrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        interval = setInterval(nextTestimonial, 5000);
+    }, {passive: true});
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextTestimonial();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevTestimonial();
+        }
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            nextTestimonial();
+        } else if (e.key === 'ArrowLeft') {
+            prevTestimonial();
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        updateItemsPerSlide();
+        // Recreate dots if switching between mobile and desktop
+        if (window.innerWidth >= 768 && dotsContainer.children.length > 0) {
+            dotsContainer.innerHTML = '';
+        } else if (window.innerWidth < 768 && dotsContainer.children.length === 0) {
+            testimonials.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (index === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => goToTestimonial(index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+    });
+    
+    // Initialize
+    updateItemsPerSlide();
+});
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            
+            let currentIndex = 0;
+            let slideInterval;
+            const slideDuration = 3000; // 3 seconds
+            
+            // Calculate how many slides to move based on screen size
+            function getSlidesToScroll() {
+                if (window.innerWidth < 768) return 1; // Mobile
+                if (window.innerWidth < 992) return 2; // Tablet
+                if (window.innerWidth < 1200) return 3; // Small desktop
+                return 4; // Large desktop
+            }
+            
+            // Update carousel position
+            function updateCarousel() {
+                const slideWidth = slides[0].offsetWidth;
+                const slidesToShow = Math.min(getSlidesToScroll(), slides.length);
+                const scrollPosition = currentIndex * slideWidth;
+                
+                track.style.transform = `translateX(-${scrollPosition}px)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Move to next slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            }
+            
+            // Start auto-sliding
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, slideDuration);
+            }
+            
+            // Pause auto-sliding when hovering
+            track.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            // Resume auto-sliding when not hovering
+            track.addEventListener('mouseleave', startAutoSlide);
+            
+            // Dot navigation
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.getAttribute('data-index'));
+                    updateCarousel();
+                    // Reset timer when manually navigating
+                    clearInterval(slideInterval);
+                    startAutoSlide();
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                updateCarousel();
+            });
+            
+            // Initialize
+            updateCarousel();
+            startAutoSlide();
+            
+            // Touch support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                clearInterval(slideInterval);
+            }, { passive: true });
+            
+            track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                startAutoSlide();
+            }, { passive: true });
+            
+            function handleSwipe() {
+                const threshold = 50;
+                if (touchEndX < touchStartX - threshold) {
+                    // Swipe left - next
+                    currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+                } else if (touchEndX > touchStartX + threshold) {
+                    // Swipe right - previous
+                    currentIndex = Math.max(currentIndex - 1, 0);
+                }
+                updateCarousel();
+            }
+        });
+    </script>
+
+    
+    <script>
+
+        // Filter Gallery Items
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  // Sample gallery data (in real implementation, this would come from an API)
+  const galleryData = [
+    { id: 1, src: 'img/bike221.png', category: 'nature', title: 'Mountain Sunrise', description: 'Beautiful sunrise over the mountains' },
+    { id: 2, src: 'img/moto23.png', category: 'urban', title: 'City Lights', description: 'Night view of the city skyline' },
+    { id: 3, src: 'img/bike221.png', category: 'people', title: 'Portrait', description: 'Close-up portrait with natural lighting' },
+    { id: 4, src: 'img/bike221.png', category: 'nature', title: 'Forest Path', description: 'Sunlight filtering through trees' },
+    { id: 5, src: 'img/bike221.png', category: 'urban', title: 'Street Art', description: 'Colorful mural in the downtown area' },
+    { id: 6, src: 'img/bike221.png', category: 'people', title: 'Group Activity', description: 'Team building exercise outdoors' },
+    { id: 7, src: 'img/bike221.png', category: 'nature', title: 'Ocean Waves', description: 'Powerful waves crashing on rocks' },
+    { id: 8, src: 'img/bike221.png', category: 'urban', title: 'Architecture', description: 'Modern building with unique design' }
+  ];
+
+  const galleryContainer = document.querySelector('.gallery-container');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const viewButtons = document.querySelectorAll('.view-btn');
+  const loadMoreBtn = document.querySelector('.load-more');
+  const lightboxModal = document.querySelector('.lightbox-modal');
+  const lightboxImage = document.querySelector('.lightbox-image');
+  const lightboxCaption = document.querySelector('.lightbox-caption');
+  const closeLightbox = document.querySelector('.close-lightbox');
+  const prevBtn = document.querySelector('.lightbox-nav.prev');
+  const nextBtn = document.querySelector('.lightbox-nav.next');
+
+  let currentFilter = 'all';
+  let currentView = 'grid';
+  let displayedItems = 6; // Initial number of items to display
+  let currentLightboxIndex = 0;
+
+  // Initialize gallery
+  function initGallery() {
+    renderGallery();
+    setupEventListeners();
+  }
+
+  // Render gallery items
+  function renderGallery() {
+    galleryContainer.innerHTML = '';
+    
+    const filteredItems = galleryData.filter(item => 
+      currentFilter === 'all' || item.category === currentFilter
+    ).slice(0, displayedItems);
+    
+    filteredItems.forEach((item, index) => {
+      const galleryItem = document.createElement('div');
+      galleryItem.className = `gallery-item ${item.category} ${index % 3 === 0 ? 'tall' : ''} ${index % 5 === 0 ? 'wide' : ''}`;
+      galleryItem.dataset.id = item.id;
+      galleryItem.dataset.index = index;
+      
+      galleryItem.innerHTML = `
+        <img src="${item.src}" alt="${item.title}">
+        <div class="item-overlay">
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+        </div>
+      `;
+      
+      galleryContainer.appendChild(galleryItem);
+    });
+    
+    // Update view mode
+    updateViewMode();
+    
+    // Hide load more button if all items are displayed
+    if (displayedItems >= galleryData.length) {
+      loadMoreBtn.style.display = 'none';
+    } else {
+      loadMoreBtn.style.display = 'block';
+    }
+  }
+
+  // Update gallery view mode
+  function updateViewMode() {
+    galleryContainer.className = 'gallery-container';
+    galleryContainer.classList.add(currentView);
+  }
+
+  // Setup event listeners
+  function setupEventListeners() {
+    // Filter buttons
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        currentFilter = button.dataset.filter;
+        displayedItems = 6; // Reset displayed items when filter changes
+        renderGallery();
+      });
+    });
+    
+    // View mode buttons
+    viewButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        viewButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        currentView = button.classList.contains('grid-view') ? 'grid' : 
+                      button.classList.contains('masonry-view') ? 'masonry' : 'carousel';
+        updateViewMode();
+      });
+    });
+    
+    // Load more button
+    loadMoreBtn.addEventListener('click', () => {
+      displayedItems += 3;
+      renderGallery();
+    });
+    
+    // Gallery item click for lightbox
+    galleryContainer.addEventListener('click', (e) => {
+      const galleryItem = e.target.closest('.gallery-item');
+      if (galleryItem) {
+        openLightbox(parseInt(galleryItem.dataset.index));
+      }
+    });
+    
+    // Lightbox controls
+    closeLightbox.addEventListener('click', closeLightboxModal);
+    prevBtn.addEventListener('click', showPrevImage);
+    nextBtn.addEventListener('click', showNextImage);
+    
+    // Keyboard navigation for lightbox
+    document.addEventListener('keydown', (e) => {
+      if (lightboxModal.style.display === 'flex') {
+        if (e.key === 'Escape') closeLightboxModal();
+        if (e.key === 'ArrowLeft') showPrevImage();
+        if (e.key === 'ArrowRight') showNextImage();
+      }
+    });
+  }
+
+  // Open lightbox
+  function openLightbox(index) {
+    const filteredItems = galleryData.filter(item => 
+      currentFilter === 'all' || item.category === currentFilter
+    );
+    
+    const item = filteredItems[index];
+    lightboxImage.src = item.src;
+    lightboxCaption.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
+    currentLightboxIndex = index;
+    lightboxModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Close lightbox
+  function closeLightboxModal() {
+    lightboxModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  // Show previous image in lightbox
+  function showPrevImage() {
+    const filteredItems = galleryData.filter(item => 
+      currentFilter === 'all' || item.category === currentFilter
+    );
+    
+    currentLightboxIndex = (currentLightboxIndex - 1 + filteredItems.length) % filteredItems.length;
+    const item = filteredItems[currentLightboxIndex];
+    lightboxImage.src = item.src;
+    lightboxCaption.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
+  }
+
+  // Show next image in lightbox
+  function showNextImage() {
+    const filteredItems = galleryData.filter(item => 
+      currentFilter === 'all' || item.category === currentFilter
+    );
+    
+    currentLightboxIndex = (currentLightboxIndex + 1) % filteredItems.length;
+    const item = filteredItems[currentLightboxIndex];
+    lightboxImage.src = item.src;
+    lightboxCaption.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
+  }
+
+  // Initialize the gallery
+  initGallery();
+});
+    </script>
+</body>
+</html>

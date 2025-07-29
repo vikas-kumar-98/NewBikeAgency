@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Cutting-Edge Software Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--External Css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+
+        /* Navigation Styles */
+.navbar {
+    background-color: white;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.3rem 0.3rem;
+  }
+        
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+       
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.5rem;
+   }
+        
+ .nav-links li {
+      position: relative;
+     }
+        
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    padding: 0.4rem .6rem;
+    border-radius: 0.7rem;
+    font-size: 18px;
+    font-weight: bold;
+    }
+        
+.nav-links a:hover {
+    color: var(--primary);
+    background-color: var(--blue);
+
+   }
+        
+.nav-links a i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    }
+        
+
+         /* Basic styling for the advanced header */
+.advanced-header3 {
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-top-bar3 {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.container3 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info3 {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-item3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-item3 i {
+    font-size: 12px;
+}
+
+.contact-item3 a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.social-media2 {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media2 a {
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.social-media2 a:hover {
+    color: #3498db;
+}
+
+
+/* Mobile responsiveness would need to be added */
+
+
+        .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.9rem;
+    color: var(--secondary);
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    }
+        
+.mobile-menu-btn:hover {
+    background-color: var(--gray-light);
+    }
+
+/* Mobile Navigation Styles */
+    @media (max-width: 992px) {
+     .nav-links {
+       position: fixed;
+       top: 50px;
+       left: -100%;
+       width: 280px;
+       height: calc(100vh - 80px);
+       background-color: white;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 2rem;
+       transition: var(--transition);
+       box-shadow: var(--shadow-lg);
+       z-index: 999;
+       overflow-y: auto;
+      }
+            
+    .nav-links.active {
+          left: 0;
+      }
+            
+    .nav-links li {
+          margin: 0;
+          width: 100%;
+          padding: 0.5rem 0;
+          border-bottom: 1px solid var(--gray-light);
+        }
+            
+    .nav-links a {
+            padding: 0.8rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+
+    .dropdown-menu {
+          position: static;
+          box-shadow: none;
+          padding: 0;
+          opacity: 1;
+          visibility: visible;
+          display: none;
+          background-color: var(--gray-light);
+          border-radius: 0;
+          width: 100%;
+       }
+            
+    .dropdown-menu.active {
+        display: block;
+      }
+            
+    .dropdown-menu li {
+        padding: 0.8rem 1rem;
+        }
+            
+    .dropdown > a::after {
+          content: '\f078';
+          font-family: 'Font Awesome 6 Free';
+          font-weight: 900;
+          margin-left: 5px;
+          transition: transform 0.3s;
+         }
+            
+     .dropdown.active > a::after {
+        transform: rotate(180deg);
+        }
+            
+    .mobile-menu-btn {
+        display: block;
+        }
+    }
+
+
+        /* Hero Section */
+        .hero2 {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1511994298241-608e28f14fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+        
+        .hero2 h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero2 p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn2 {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .btn2:hover {
+            background-color: #2980b9;
+        }
+        
+             /* Booking Form Section */
+        .booking-section {
+            padding: 30px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .booking-form {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-row {
+            display: flex;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+        
+        .form-group {
+            flex: 1;
+            margin-bottom: 0;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn-submit {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        .btn-submit:hover {
+            background-color: #2980b9;
+        }
+        
+        .required:after {
+            content: " *";
+            color: #e74c3c;
+        }
+        
+        /* Bike Models Section */
+        .models-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .bike-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .bike-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .bike-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .bike-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .bike-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .bike-card:hover .bike-img img {
+            transform: scale(1.1);
+        }
+        
+        .bike-info {
+            padding: 20px;
+        }
+        
+        .bike-info h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .bike-info p {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .bike-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .booking-form {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .btn, .btn-submit {
+                padding: 10px 20px;
+            }
+        }
+        /*End Of online booking*/
+            .title2 {
+      font-size: 4rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #00dbde, #fc00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: fadeSlide 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+@media screen and (max-width: 768px) {
+  .advanced-header3 {
+    display: none;
+  }
+}
+
+.online-text2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      background: linear-gradient(to right, #8E2DE2, #4A00E0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      text-align: center;
+}
+
+.bike-card2 {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .bike-card2:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+.bike-img2 {
+            height: auto;
+            overflow: hidden;
+        }
+
+      .product-image {
+            height: auto;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header class="advanced-header3">
+    <!-- Top bar with contact information -->
+    <div class="header-top-bar3">
+        <div class="container3">
+            <div class="contact-info3">
+                <div class="contact-item3">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Ave, Suite 456, Cityville, ST 12345</span>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+1234567890">+91 7510028244</a>
+                </div>
+            </div>
+            
+            <div class="social-media2">
+                <a href="https://facebook.com/yourcompany" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/yourcompany" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/yourcompany" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/yourcompany" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</header>
+
+<!-- Navigation -->
+
+ <nav class="navbar">
+   <div class="nav-container">
+    <a href="index.php" class="logo">
+      <img src="img/bikelog.png" alt="TechNova Logo">
+        <span class="logo-text">BholeBike</span>
+    </a>
+            
+   <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+   </button>
+            
+   <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="new-bike.html">New Bike</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="online-booking.html">Online Booking</a></li>
+      <li><a href="contact.html">Contact Us</a></li>             
+      <li><a href="gallary.html">Gallary</a></li>
+    </ul>
+  </div>
+ </nav>
+
+
+
+
+<!-- Main Content -->
+<!-- Hero Section -->
+    <section class="hero2" id="home">
+        <div class="container">
+            <h1 >Explore the City on Two Wheels</h1>
+            <p>Rent premium bikes at affordable prices. Perfect for commuting, exercise, or just enjoying the outdoors.</p>
+            <a href="#booking" class="btn2">Book Your Ride Now</a>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="section-title1">
+                <h2 class="title2" style="font-size:35px;">Book Your Bike</h2>
+            </div>
+            
+            <div class="booking-form" style="box-shadow:5px 4px midnightblue; border: 1px solid midnightblue;">
+                <form id="bikeBookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="required">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="required">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Your email address">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="mobile" class="required">Mobile Number</label>
+                            <input type="tel" id="mobile" name="mobile" required placeholder="Your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bookingDate" class="required">Booking Date</label>
+                            <input type="date" id="bookingDate" name="bookingDate" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bikeModel" class="required">Bike Model</label>
+                            <select id="bikeModel" name="bikeModel" required>
+                                <option value="">Select a bike</option>
+                                <option value="Mountain Bike Pro">Mountain Bike Pro</option>
+                                <option value="Road Bike Elite">Road Bike Elite</option>
+                                <option value="Hybrid Bike Comfort">Hybrid Bike Comfort</option>
+                                <option value="Electric Bike Power+">Electric Bike Power+</option>
+                                <option value="City Bike Classic">City Bike Classic</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location" class="required">Pickup Location</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select location</option>
+                                <option value="Downtown Branch">Downtown Branch</option>
+                                <option value="Beachside Station">Beachside Station</option>
+                                <option value="Mountain View Outlet">Mountain View Outlet</option>
+                                <option value="City Center Hub">City Center Hub</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+     
+     <?php include('bike_show.php'); ?>
+    
+
+    <!-- Bike Models Section -->
+    <section class="models-section" id="bikes">
+        <div class="container">
+            <div class="section-title3">
+                <h2 class="title2" style="font-size:35px;">Our Bike Models</h2>
+                <p class="online-text2" style="text-align: center;">Choose from our premium selection of bikes for all riding styles and terrains.</p>
+            </div>
+            
+            <div class="bike-grid">
+                <div class="bike-card2">
+                    <div class="bike-img2" >
+                        <img src="img/bike221.png" style="with:100%;height: auto;" alt="Mountain Bike">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Mountain Bike Pro</h3>
+                        <p>Perfect for off-road adventures and rough terrains.</p>
+                        <div class="bike-price">$25/day</div>
+                    </div>
+                </div>
+                
+                <div class="bike-card2">
+                    <div class="bike-img2">
+                        <img src="img/moto3232.png" alt="Road Bike">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Road Bike Elite</h3>
+                        <p>Lightweight and fast for city commuting and long distances.</p>
+                        <div class="bike-price">$20/day</div>
+                    </div>
+                </div>
+                
+                <div class="bike-card2">
+                    <div class="bike-img2">
+                        <img src="img/moto22.png" alt="Hybrid Bike">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Hybrid Bike Comfort</h3>
+                        <p>Versatile bike for both city streets and light trails.</p>
+                        <div class="bike-price">$18/day</div>
+                    </div>
+                </div>
+                
+                <div class="bike-card2">
+                    <div class="bike-img2">
+                        <img src="img/moto23.png" alt="Electric Bike">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Electric Bike Power+</h3>
+                        <p>Effortless riding with our premium electric assist bikes.</p>
+                        <div class="bike-price">$35/day</div>
+                    </div>
+                </div>
+                                <div class="bike-card2">
+                    <div class="bike-img2">
+                        <img src="img/moto3333.png" alt="Electric Bike">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Electric Bike Power+</h3>
+                        <p>Effortless riding with our premium electric assist bikes.</p>
+                        <div class="bike-price">$35/day</div>
+                    </div>
+                </div>
+                                <div class="bike-card2">
+                    <div class="bike-img2">
+                        <img src="img/moto234.png" alt="Electric Bike">
+                    </div>
+                    <div class="bike-info">
+                        <h3>Electric Bike Power+</h3>
+                        <p>Effortless riding with our premium electric assist bikes.</p>
+                        <div class="bike-price">$35/day</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- End main -->
+<!-- Footer -->
+  <footer>
+    <div class="footer-wave"></div>
+      <div class="footer-container">
+          <div class="footer-logo-col">
+            <a href="#" class="footer-logo">
+                <img src="img/bikelog.png" alt="TechNova Logo">
+                <span class="footer-logo-text">BikeWalaa</span>
+            </a>
+            <p class="footer-about">
+              <strong>BholeBike</strong>Founded in 2008 by racing champion Derek Velocity, our agency began as a small boutique specializing in high-performance sport bikes. What started as a one-man operation in a garage has grown into a 20,000 sq ft state-of-the-art facility representing the world's finest motorcycle brands.
+
+ 
+            </p>
+            <div class="social-links">
+             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+            
+        <div class="footer-col">
+         <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Solutions</a></li>
+           <li><a href="#">Case Studies</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+             <ul class="footer-links">
+              <li><a href="#">Bike Service</a></li>
+              <li><a href="#">New Bike</a></li>
+              <li><a href="#">Sport Bike</a></li>
+              <li><a href="#">Latest Bike</a></li>
+              <li><a href="#">team</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Contact Us</h3>
+           <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Park, Silicon Valley, CA 94025</p>
+            <p><i class="fas fa-phone-alt"></i> *91 7510028244</p>
+            <p><i class="fas fa-envelope"></i> bholebike@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2023 TechNova Solutions. All rights reserved.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+    </footer>
+    <div class="smart-call-button" id="callButton">
+        <i class="fas fa-phone"></i>
+        <div class="call-confirmation" id="callConfirmation">Calling...</div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Dropdown Menu Toggle for Mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('a');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 992) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    menu.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                            otherDropdown.querySelector('.dropdown-menu').classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992 && !e.target.closest('.dropdown') && !e.target.closest('.mobile-menu-btn')) {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                    dropdown.querySelector('.dropdown-menu').classList.remove('active');
+                });
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        const navItems = document.querySelectorAll('.nav-links li:not(.dropdown) a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // Slider Functionality
+        const slides = document.querySelectorAll('.slide');
+        const controls = document.querySelectorAll('.slider-control');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            controls.forEach(control => control.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            controls[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = currentSlide + 1;
+            if (next >= slides.length) next = 0;
+            showSlide(next);
+        }
+
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+
+        // Initialize slider
+        showSlide(0);
+        startSlider();
+
+        // Add click events to controls
+        controls.forEach((control, index) => {
+            control.addEventListener('click', () => {
+                stopSlider();
+                showSlide(index);
+                startSlider();
+            });
+        });
+
+        // Pause on hover
+        const slider = document.querySelector('.slider');
+        slider.addEventListener('mouseenter', stopSlider);
+        slider.addEventListener('mouseleave', startSlider);
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Testimonial data
+    const testimonials = [
+        {
+            text: "This product completely transformed my workflow. The ease of use and powerful features have saved me countless hours of work.",
+            author: "Sarah Johnson",
+            position: "Marketing Director",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/43.jpg"
+        },
+        {
+            text: "Excellent customer service and a top-notch product. The team was incredibly responsive to our needs.",
+            author: "Michael Chen",
+            position: "CTO",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+            text: "I was skeptical at first, but after using it for just one week, I was completely sold. The ROI has been phenomenal.",
+            author: "Emily Rodriguez",
+            position: "Project Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/65.jpg"
+        },
+        {
+            text: "The best solution in its category. We evaluated several competitors but none came close to this product.",
+            author: "David Wilson",
+            position: "Operations Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/75.jpg"
+        },
+        {
+            text: "Simple to set up and incredibly powerful. We've automated processes that used to take days, now completed in minutes.",
+            author: "Lisa Thompson",
+            position: "Sales Executive",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/women/22.jpg"
+        },
+        {
+            text: "The support team is outstanding. They helped us customize the solution to our exact business needs.",
+            author: "Robert Garcia",
+            position: "IT Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/46.jpg"
+        }
+    ];
+
+    const wrapper = document.querySelector('.testimonial-wrapper');
+    const dotsContainer = document.querySelector('.testimonial-dots');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentIndex = 0;
+    let itemsPerSlide = 1; // Default for mobile
+    
+    // Determine items per slide based on screen size
+    function updateItemsPerSlide() {
+        if (window.innerWidth >= 992) {
+            itemsPerSlide = 3; // Desktop
+        } else if (window.innerWidth >= 768) {
+            itemsPerSlide = 2; // Tablet
+        } else {
+            itemsPerSlide = 1; // Mobile
+        }
+        updateTestimonial();
+    }
+    
+    // Create testimonial items
+    testimonials.forEach((testimonial, index) => {
+        // Create testimonial item
+        const item = document.createElement('div');
+        item.className = 'testimonial-item';
+        
+        // Create rating stars
+        let stars = '';
+        for (let i = 0; i < 5; i++) {
+            stars += i < testimonial.rating 
+                ? '<i class="fas fa-star"></i>' 
+                : '<i class="far fa-star"></i>';
+        }
+        
+        item.innerHTML = `
+            <div class="testimonial-content">
+                <p class="testimonial-text">${testimonial.text}</p>
+                <div class="testimonial-author">
+                    <img src="${testimonial.image}" alt="${testimonial.author}" class="author-img">
+                    <div class="author-info">
+                        <h4>${testimonial.author}</h4>
+                        <p>${testimonial.position}</p>
+                        <div class="testimonial-rating">${stars}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        wrapper.appendChild(item);
+        
+        // Create dots (only for mobile)
+        if (window.innerWidth < 768) {
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToTestimonial(index));
+            dotsContainer.appendChild(dot);
+        }
+    });
+    
+    const items = document.querySelectorAll('.testimonial-item');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Update testimonial position
+    function updateTestimonial() {
+        const slideWidth = 100 / itemsPerSlide;
+        wrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+        
+        // Update dots (only for mobile)
+        if (window.innerWidth < 768) {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+    }
+    
+    // Go to specific testimonial
+    function goToTestimonial(index) {
+        currentIndex = index;
+        updateTestimonial();
+    }
+    
+    // Next testimonial
+    function nextTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Previous testimonial
+    function prevTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex - 1 + maxIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', nextTestimonial);
+    prevBtn.addEventListener('click', prevTestimonial);
+    
+    // Auto-rotate testimonials
+    let interval = setInterval(nextTestimonial, 5000);
+    
+    // Pause on hover
+    wrapper.addEventListener('mouseenter', () => clearInterval(interval));
+    wrapper.addEventListener('mouseleave', () => {
+        interval = setInterval(nextTestimonial, 5000);
+    });
+    
+    // Touch events for mobile swipe
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    wrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        clearInterval(interval);
+    }, {passive: true});
+    
+    wrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        interval = setInterval(nextTestimonial, 5000);
+    }, {passive: true});
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextTestimonial();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevTestimonial();
+        }
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            nextTestimonial();
+        } else if (e.key === 'ArrowLeft') {
+            prevTestimonial();
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        updateItemsPerSlide();
+        // Recreate dots if switching between mobile and desktop
+        if (window.innerWidth >= 768 && dotsContainer.children.length > 0) {
+            dotsContainer.innerHTML = '';
+        } else if (window.innerWidth < 768 && dotsContainer.children.length === 0) {
+            testimonials.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (index === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => goToTestimonial(index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+    });
+    
+    // Initialize
+    updateItemsPerSlide();
+});
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            
+            let currentIndex = 0;
+            let slideInterval;
+            const slideDuration = 3000; // 3 seconds
+            
+            // Calculate how many slides to move based on screen size
+            function getSlidesToScroll() {
+                if (window.innerWidth < 768) return 1; // Mobile
+                if (window.innerWidth < 992) return 2; // Tablet
+                if (window.innerWidth < 1200) return 3; // Small desktop
+                return 4; // Large desktop
+            }
+            
+            // Update carousel position
+            function updateCarousel() {
+                const slideWidth = slides[0].offsetWidth;
+                const slidesToShow = Math.min(getSlidesToScroll(), slides.length);
+                const scrollPosition = currentIndex * slideWidth;
+                
+                track.style.transform = `translateX(-${scrollPosition}px)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Move to next slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            }
+            
+            // Start auto-sliding
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, slideDuration);
+            }
+            
+            // Pause auto-sliding when hovering
+            track.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            // Resume auto-sliding when not hovering
+            track.addEventListener('mouseleave', startAutoSlide);
+            
+            // Dot navigation
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.getAttribute('data-index'));
+                    updateCarousel();
+                    // Reset timer when manually navigating
+                    clearInterval(slideInterval);
+                    startAutoSlide();
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                updateCarousel();
+            });
+            
+            // Initialize
+            updateCarousel();
+            startAutoSlide();
+            
+            // Touch support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                clearInterval(slideInterval);
+            }, { passive: true });
+            
+            track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                startAutoSlide();
+            }, { passive: true });
+            
+            function handleSwipe() {
+                const threshold = 50;
+                if (touchEndX < touchStartX - threshold) {
+                    // Swipe left - next
+                    currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+                } else if (touchEndX > touchStartX + threshold) {
+                    // Swipe right - previous
+                    currentIndex = Math.max(currentIndex - 1, 0);
+                }
+                updateCarousel();
+            }
+        });
+    </script>
+</body>
+</html>

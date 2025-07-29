@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Cutting-Edge Software Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--External Css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+
+    /* Navigation Styles */
+.navbar {
+    background-color: white;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.3rem 0.3rem;
+  }
+        
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+       
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.5rem;
+   }
+        
+ .nav-links li {
+      position: relative;
+     }
+        
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    padding: 0.4rem .6rem;
+    border-radius: 0.7rem;
+    font-size: 18px;
+    font-weight: bold;
+    }
+        
+.nav-links a:hover {
+    color: var(--primary);
+    background-color: var(--blue);
+
+   }
+        
+.nav-links a i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    }
+        
+
+
+         /* Basic styling for the advanced header */
+.advanced-header3 {
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+@media screen and (max-width: 768px) {
+  .advanced-header3 {
+    display: none;
+  }
+}
+
+.header-top-bar3 {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.container3 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info3 {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-item3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-item3 i {
+    font-size: 12px;
+}
+
+.contact-item3 a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.social-media2 {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media2 a {
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.social-media2 a:hover {
+    color: #3498db;
+}
+
+
+/* Mobile responsiveness would need to be added */
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.9rem;
+    color: var(--secondary);
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    }
+        
+.mobile-menu-btn:hover {
+    background-color: var(--gray-light);
+    }
+
+/* Mobile Navigation Styles */
+    @media (max-width: 992px) {
+     .nav-links {
+       position: fixed;
+       top: 50px;
+       left: -100%;
+       width: 280px;
+       height: calc(100vh - 80px);
+       background-color: white;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 2rem;
+       transition: var(--transition);
+       box-shadow: var(--shadow-lg);
+       z-index: 999;
+       overflow-y: auto;
+      }
+            
+    .nav-links.active {
+          left: 0;
+      }
+            
+    .nav-links li {
+          margin: 0;
+          width: 100%;
+          padding: 0.5rem 0;
+          border-bottom: 1px solid var(--gray-light);
+        }
+            
+    .nav-links a {
+            padding: 0.8rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+
+    .dropdown-menu {
+          position: static;
+          box-shadow: none;
+          padding: 0;
+          opacity: 1;
+          visibility: visible;
+          display: none;
+          background-color: var(--gray-light);
+          border-radius: 0;
+          width: 100%;
+       }
+            
+    .dropdown-menu.active {
+        display: block;
+      }
+            
+    .dropdown-menu li {
+        padding: 0.8rem 1rem;
+        }
+            
+    .dropdown > a::after {
+          content: '\f078';
+          font-family: 'Font Awesome 6 Free';
+          font-weight: 900;
+          margin-left: 5px;
+          transition: transform 0.3s;
+         }
+            
+     .dropdown.active > a::after {
+        transform: rotate(180deg);
+        }
+            
+    .mobile-menu-btn {
+        display: block;
+        }
+    }
+
+    .title2 {
+      font-size: 4rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #00dbde, #fc00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: fadeSlide 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+     .bounce-text {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #facc15;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: bounceIn 1s ease-out;
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      70% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .text-advanced-contact {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      background: linear-gradient(to right, #8E2DE2, #4A00E0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      text-align: center;
+}
+
+
+/*Faq Page*/
+       
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (min-width: 992px) {
+            .faq-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .faq-category {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary);
+        }
+        
+        .category-header {
+            background: var(--secondary);
+            color: white;
+            padding: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .faq-question:hover {
+            background: var(--light);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.8rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active::after {
+            content: '-';
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease;
+        }
+        
+        .faq-answer.show {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 1000px;
+        }
+        
+        .faq-answer p {
+            margin-bottom: 1rem;
+        }
+        
+        .faq-answer ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .specs-table th, .specs-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .specs-table th {
+            background-color: var(--light);
+        }
+        
+        .cta-banner {
+            text-align: center;
+            margin: 5rem 0;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--dark) 100%);
+            color: white;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-banner h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-banner p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 2.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: #C1121F;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header class="advanced-header3">
+    <!-- Top bar with contact information -->
+    <div class="header-top-bar3">
+        <div class="container3">
+            <div class="contact-info3">
+                <div class="contact-item3">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Ave, Suite 456, Cityville, ST 12345</span>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+1234567890">+91 7510028244</a>
+                </div>
+            </div>
+            
+            <div class="social-media2">
+                <a href="https://facebook.com/yourcompany" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/yourcompany" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/yourcompany" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/yourcompany" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</header>
+
+<!-- Navigation -->
+
+ <nav class="navbar">
+   <div class="nav-container">
+    <a href="index.php" class="logo">
+      <img src="img/bikelog.png" alt="TechNova Logo">
+        <span class="logo-text">BholeBike</span>
+    </a>
+            
+   <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+   </button>
+            
+   <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="new-bike.html">New Bike</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="online-booking.html">Online Booking</a></li>
+      <li><a href="contact.html">Contact Us</a></li>             
+      <li><a href="gallary.html">Gallary</a></li>
+    </ul>
+  </div>
+ </nav>
+
+
+
+
+<!-- Main Content -->
+  <!-- Main Content -->
+    <main class="container">
+        <div class="section-title2" style="padding-top: 30px;">
+            <h2 class="title2" style="font-size:30px;">How Can We Help You?</h2>
+            <p class="text-advanced-contact" style="font-size:14px;">Whether you're looking for a new bike, need service, or just have questions, our team is ready to assist you.</p>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="contact-section">
+
+            <!-- Contact Form -->
+            <div class="contact-form-container" style="box-shadow:3px 3px midnightblue;  border: 1px solid midnightblue;">
+                <h3>Send Us a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <div class="error-message">Please enter your name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <div class="error-message">Please enter a valid email</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" class="form-control" required>
+                            <option value="">Select a subject</option>
+                            <option value="sales">New Motorcycle Inquiry</option>
+                            <option value="service">Service Appointment</option>
+                            <option value="parts">Parts Inquiry</option>
+                            <option value="test-ride">Test Ride Request</option>
+                            <option value="general">General Question</option>
+                        </select>
+                        <div class="error-message">Please select a subject</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                        <div class="error-message">Please enter your message</div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div class="success-message" id="success-message">
+                        Thank you! Your message has been sent successfully. We'll get back to you soon.
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info-container card">
+                <div class="info-card">
+                    <h3>Contact Details</h3>
+                    <div class="info-item" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px;border-radius: 4px;">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Our Showroom</h4>
+                            <p>123 Motor Avenue, Bike City, BC 90210</p>
+                        </div>
+                    </div>
+                    <div class="info-item" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px;border-radius: 4px;">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+18005551234">+1 (800) 555-1234</a></p>
+                            <p><a href="tel:+18005551235">+1 (800) 555-1235 (Service)</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px;border-radius: 4px;">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:info@elitemotors.com">info@elitemotors.com</a></p>
+                            <p><a href="mailto:service@elitemotors.com">service@elitemotors.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px;border-radius: 4px;">
+                        <a href="tel:+18005551234" class="action-btn call-btn">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/18005551234" target="_blank" class="action-btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="mailto:info@elitemotors.com" class="action-btn email-btn">
+                            <i class="fas fa-envelope"></i> Email Us
+                        </a>
+                    </div>
+                    
+                    <div class="social-media" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px;border-radius: 4px;">
+                        <h4>Follow Us</h4>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hours-container" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px; border-radius: 4px;">
+                    <h3>Business Hours</h3>
+                    <ul class="hours-list" id="hours-list">
+                        <li class="hours-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">9:00 AM - 7:00 PM</span>
+                        </li>
+                        <li class="hours-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">10:00 AM - 5:00 PM</span>
+                        </li>
+                        <li class="hours-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Map Section -->
+        <div class="map-section">
+            <div class="section-title">
+                <h2>Visit Our Showroom</h2>
+                <p style="font-size:20px;">Come see our extensive collection of premium motorcycles and meet our expert team</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215373510635!2d-73.9878449245256!3d40.74844097138945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTkuMiJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map-overlay"></div>
+            </div>
+        </div>
+        
+
+    </main>
+  <div class="container">
+        <div class="faq-grid">
+            <!-- Purchases Section -->
+            <div class="faq-category">
+                <div class="category-header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
+                    </svg>
+                    Motorcycle Purchases
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What financing options do you offer?</div>
+                    <div class="faq-answer">
+                        <p>We provide flexible financing solutions for all credit levels:</p>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Option</th>
+                                <th>Terms</th>
+                                <th>APR</th>
+                            </tr>
+                            <tr>
+                                <td>Premium Financing</td>
+                                <td>12-72 months</td>
+                                <td>3.99%-6.99%</td>
+                            </tr>
+                            <tr>
+                                <td>First-Time Buyer</td>
+                                <td>24-60 months</td>
+                                <td>7.99%-12.99%</td>
+                            </tr>
+                            <tr>
+                                <td>Seasonal Special</td>
+                                <td>6-12 months</td>
+                                <td>0% (qualifying models)</td>
+                            </tr>
+                        </table>
+                        <p><span class="highlight">Pre-approval available online</span> in 15 minutes without affecting your credit score.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What's included with a new motorcycle purchase?</div>
+                    <div class="faq-answer">
+                        <p>Every new bike comes with our <span class="highlight">MotoCare Premier Package</span>:</p>
+                        <ul>
+                            <li>Full dealer prep and inspection</li>
+                            <li>First service at 600 miles (free labor)</li>
+                            <li>2-year unlimited mileage warranty</li>
+                            <li>24/7 roadside assistance for first year</li>
+                            <li>Free delivery within 100 miles</li>
+                        </ul>
+                        <p>Ask about our extended warranty options at purchase.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you accept trade-ins?</div>
+                    <div class="faq-answer">
+                        <p>Yes! Our trade-in process is simple:</p>
+                        <ol>
+                            <li><span class="highlight">Online valuation:</span> Get an instant estimate on our website</li>
+                            <li><span class="highlight">In-person appraisal:</span> Bring your bike for detailed inspection</li>
+                            <li><span class="highlight">Trade bonus:</span> Get extra $500 on any working motorcycle</li>
+                        </ol>
+                        <p>We accept all makes/models in any condition. Even non-running bikes have value for parts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rentals Section -->
+            <div class="faq-category">
+                <div class="category-header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/>
+                    </svg>
+                    Motorcycle Rentals
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What are your rental requirements?</div>
+                    <div class="faq-answer">
+                        <p>To rent any motorcycle, you must:</p>
+                        <ul>
+                            <li>Be at least <span class="highlight">21 years old</span> (25 for premium models)</li>
+                            <li>Have a valid motorcycle license for 2+ years</li>
+                            <li>Provide proof of insurance or purchase our coverage</li>
+                            <li>Leave a $500-$2000 security deposit (varies by model)</li>
+                        </ul>
+                        <p>International renters need an International Driving Permit and passport.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What's included in the rental price?</div>
+                    <div class="faq-answer">
+                        <p>All rentals include:</p>
+                        <ul>
+                            <li>Unlimited mileage</li>
+                            <li>Helmet (full-face or modular)</li>
+                            <li>Basic insurance (collision damage waiver)</li>
+                            <li>24/7 roadside assistance</li>
+                            <li>Lock and disc brake alarm</li>
+                        </ul>
+                        <p>Optional add-ons:</p>
+                        <ul>
+                            <li>Premium insurance ($25/day - zero deductible)</li>
+                            <li>Passenger kit ($15/day - helmet and backrest)</li>
+                            <li>GPS navigation ($10/day)</li>
+                            <li>One-way rentals (available between select locations)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I rent a motorcycle for a cross-country trip?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in long-distance rentals with:</p>
+                        <ul>
+                            <li><span class="highlight">Weekly/monthly rates</span> with significant discounts</li>
+                            <li>Pre-planned touring routes with hotel partners</li>
+                            <li>Luggage systems available (hard cases or soft bags)</li>
+                            <li>Nationwide drop-off at partner locations</li>
+                        </ul>
+                        <p>Our <span class="highlight">Coast-to-Coast Package</span> includes 21 days unlimited mileage with emergency support along major routes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Section -->
+            <div class="faq-category">
+                <div class="category-header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M19.29 17.29L18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.93 6 11v5l-1.29 1.29c-.63.63-.19 1.71.7 1.71h13.17c.9 0 1.34-1.08.71-1.71zM16 17H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zm-4 5c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2z"/>
+                    </svg>
+                    Service & Repairs
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How often should I service my motorcycle?</div>
+                    <div class="faq-answer">
+                        <p>Recommended service intervals:</p>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Service Type</th>
+                                <th>Mileage/Time</th>
+                                <th>Typical Cost</th>
+                            </tr>
+                            <tr>
+                                <td>Basic Service</td>
+                                <td>Every 4,000 miles</td>
+                                <td>$150-$300</td>
+                            </tr>
+                            <tr>
+                                <td>Major Service</td>
+                                <td>Every 8,000 miles</td>
+                                <td>$400-$800</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Check</td>
+                                <td>Every 12 months</td>
+                                <td>$100-$200</td>
+                            </tr>
+                        </table>
+                        <p>Severe riding conditions (dusty, rainy, or extreme temperatures) may require more frequent service.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you service all motorcycle brands?</div>
+                    <div class="faq-answer">
+                        <p>Our certified technicians work on:</p>
+                        <ul>
+                            <li>All Japanese brands (Honda, Yamaha, Kawasaki, Suzuki)</li>
+                            <li>European models (BMW, Ducati, Triumph, KTM)</li>
+                            <li>American motorcycles (Harley-Davidson, Indian)</li>
+                            <li>Most vintage bikes (pre-2000 models may require special parts)</li>
+                        </ul>
+                        <p>We use manufacturer-approved tools and software for all electronic diagnostics.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What's your turnaround time for repairs?</div>
+                    <div class="faq-answer">
+                        <p>Standard repair timelines:</p>
+                        <ul>
+                            <li><span class="highlight">Express services:</span> Same-day for oil changes and basic maintenance (when booked in advance)</li>
+                            <li><span class="highlight">Diagnostics:</span> 1-2 business days</li>
+                            <li><span class="highlight">Mechanical repairs:</span> 3-5 business days</li>
+                            <li><span class="highlight">Engine rebuilds:</span> 2-3 weeks</li>
+                        </ul>
+                        <p>Priority service available for an additional 25% fee (cuts wait times in half).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Safety Section -->
+            <div class="faq-category">
+                <div class="category-header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11V11.99z"/>
+                    </svg>
+                    Safety & Training
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer motorcycle training courses?</div>
+                    <div class="faq-answer">
+                        <p>Yes! Our <span class="highlight">MotoAcademy</span> provides:</p>
+                        <ul>
+                            <li><span class="highlight">Beginner Course:</span> 2-day program with bike provided ($299)</li>
+                            <li><span class="highlight">Advanced Riding:</span> Skills enhancement for experienced riders ($399)</li>
+                            <li><span class="highlight">Track Days:</span> Supervised circuit training ($499/day)</li>
+                            <li><span class="highlight">Private Lessons:</span> One-on-one coaching ($120/hour)</li>
+                        </ul>
+                        <p>Successful completion of our beginner course waives the DMV skills test in most states.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What safety gear do you recommend?</div>
+                    <div class="faq-answer">
+                        <p>Our <span class="highlight">ATGATT</span> (All The Gear All The Time) policy recommends:</p>
+                        <ul>
+                            <li><span class="highlight">Helmet:</span> ECE/DOT certified full-face</li>
+                            <li><span class="highlight">Jacket:</span> Armored motorcycle-specific with abrasion-resistant material</li>
+                            <li><span class="highlight">Pants:</span> Kevlar-lined or leather with knee protection</li>
+                            <li><span class="highlight">Gloves:</span> Gauntlet style with palm sliders</li>
+                            <li><span class="highlight">Boots:</span> Ankle protection and oil-resistant soles</li>
+                        </ul>
+                        <p>We offer 10% discount on safety gear when purchased with any motorcycle.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I test ride before buying?</div>
+                    <div class="faq-answer">
+                        <p>Test ride policies:</p>
+                        <ul>
+                            <li><span class="highlight">Standard models:</span> 30-minute test rides available daily</li>
+                            <li><span class="highlight">Premium bikes:</span> By appointment only (requires proof of insurance)</li>
+                            <li><span class="highlight">Demo days:</span> Monthly events with full manufacturer lineups</li>
+                        </ul>
+                        <p>All test riders must:</p>
+                        <ol>
+                            <li>Have valid motorcycle license for 3+ years</li>
+                            <li>Wear proper safety gear (we provide if needed)</li>
+                            <li>Sign liability waiver</li>
+                            <li>Leave a refundable $500 deposit</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-banner">
+            <h2>Ready to Hit the Road?</h2>
+            <p>Whether you're looking to buy, rent, or service your motorcycle, our experts are here to help you with every aspect of your riding experience.</p>
+            <button class="cta-button">Schedule an Appointment</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isActive = question.classList.contains('active');
+                    
+                    // Close all other answers in the same category
+                    const category = question.closest('.faq-category');
+                    category.querySelectorAll('.faq-question').forEach(q => {
+                        if (q !== question) {
+                            q.classList.remove('active');
+                            q.nextElementSibling.classList.remove('show');
+                        }
+                    });
+                    
+                    // Toggle current answer
+                    question.classList.toggle('active');
+                    answer.classList.toggle('show');
+                });
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+
+<!-- End main -->
+<!-- Footer -->
+  <footer>
+    <div class="footer-wave"></div>
+      <div class="footer-container">
+          <div class="footer-logo-col">
+            <a href="#" class="footer-logo">
+                <img src="img/bikelog.png" alt="TechNova Logo">
+                <span class="footer-logo-text">BikeWalaa</span>
+            </a>
+            <p class="footer-about">
+              <strong>BholeBike</strong>Founded in 2008 by racing champion Derek Velocity, our agency began as a small boutique specializing in high-performance sport bikes. What started as a one-man operation in a garage has grown into a 20,000 sq ft state-of-the-art facility representing the world's finest motorcycle brands.
+
+ 
+            </p>
+            <div class="social-links">
+             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+            
+        <div class="footer-col">
+         <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Solutions</a></li>
+           <li><a href="#">Case Studies</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+             <ul class="footer-links">
+              <li><a href="#">Bike Service</a></li>
+              <li><a href="#">New Bike</a></li>
+              <li><a href="#">Sport Bike</a></li>
+              <li><a href="#">Latest Bike</a></li>
+              <li><a href="#">team</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Contact Us</h3>
+           <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Park, Silicon Valley, CA 94025</p>
+            <p><i class="fas fa-phone-alt"></i> *91 7510028244</p>
+            <p><i class="fas fa-envelope"></i> bholebike@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2023 TechNova Solutions. All rights reserved.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+    </footer>
+    <div class="smart-call-button" id="callButton">
+        <i class="fas fa-phone"></i>
+        <div class="call-confirmation" id="callConfirmation">Calling...</div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Dropdown Menu Toggle for Mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('a');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 992) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    menu.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                            otherDropdown.querySelector('.dropdown-menu').classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992 && !e.target.closest('.dropdown') && !e.target.closest('.mobile-menu-btn')) {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                    dropdown.querySelector('.dropdown-menu').classList.remove('active');
+                });
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        const navItems = document.querySelectorAll('.nav-links li:not(.dropdown) a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // Slider Functionality
+        const slides = document.querySelectorAll('.slide');
+        const controls = document.querySelectorAll('.slider-control');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            controls.forEach(control => control.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            controls[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = currentSlide + 1;
+            if (next >= slides.length) next = 0;
+            showSlide(next);
+        }
+
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+
+        // Initialize slider
+        showSlide(0);
+        startSlider();
+
+        // Add click events to controls
+        controls.forEach((control, index) => {
+            control.addEventListener('click', () => {
+                stopSlider();
+                showSlide(index);
+                startSlider();
+            });
+        });
+
+        // Pause on hover
+        const slider = document.querySelector('.slider');
+        slider.addEventListener('mouseenter', stopSlider);
+        slider.addEventListener('mouseleave', startSlider);
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Testimonial data
+    const testimonials = [
+        {
+            text: "This product completely transformed my workflow. The ease of use and powerful features have saved me countless hours of work.",
+            author: "Sarah Johnson",
+            position: "Marketing Director",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/43.jpg"
+        },
+        {
+            text: "Excellent customer service and a top-notch product. The team was incredibly responsive to our needs.",
+            author: "Michael Chen",
+            position: "CTO",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+            text: "I was skeptical at first, but after using it for just one week, I was completely sold. The ROI has been phenomenal.",
+            author: "Emily Rodriguez",
+            position: "Project Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/65.jpg"
+        },
+        {
+            text: "The best solution in its category. We evaluated several competitors but none came close to this product.",
+            author: "David Wilson",
+            position: "Operations Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/75.jpg"
+        },
+        {
+            text: "Simple to set up and incredibly powerful. We've automated processes that used to take days, now completed in minutes.",
+            author: "Lisa Thompson",
+            position: "Sales Executive",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/women/22.jpg"
+        },
+        {
+            text: "The support team is outstanding. They helped us customize the solution to our exact business needs.",
+            author: "Robert Garcia",
+            position: "IT Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/46.jpg"
+        }
+    ];
+
+    const wrapper = document.querySelector('.testimonial-wrapper');
+    const dotsContainer = document.querySelector('.testimonial-dots');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentIndex = 0;
+    let itemsPerSlide = 1; // Default for mobile
+    
+    // Determine items per slide based on screen size
+    function updateItemsPerSlide() {
+        if (window.innerWidth >= 992) {
+            itemsPerSlide = 3; // Desktop
+        } else if (window.innerWidth >= 768) {
+            itemsPerSlide = 2; // Tablet
+        } else {
+            itemsPerSlide = 1; // Mobile
+        }
+        updateTestimonial();
+    }
+    
+    // Create testimonial items
+    testimonials.forEach((testimonial, index) => {
+        // Create testimonial item
+        const item = document.createElement('div');
+        item.className = 'testimonial-item';
+        
+        // Create rating stars
+        let stars = '';
+        for (let i = 0; i < 5; i++) {
+            stars += i < testimonial.rating 
+                ? '<i class="fas fa-star"></i>' 
+                : '<i class="far fa-star"></i>';
+        }
+        
+        item.innerHTML = `
+            <div class="testimonial-content">
+                <p class="testimonial-text">${testimonial.text}</p>
+                <div class="testimonial-author">
+                    <img src="${testimonial.image}" alt="${testimonial.author}" class="author-img">
+                    <div class="author-info">
+                        <h4>${testimonial.author}</h4>
+                        <p>${testimonial.position}</p>
+                        <div class="testimonial-rating">${stars}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        wrapper.appendChild(item);
+        
+        // Create dots (only for mobile)
+        if (window.innerWidth < 768) {
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToTestimonial(index));
+            dotsContainer.appendChild(dot);
+        }
+    });
+    
+    const items = document.querySelectorAll('.testimonial-item');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Update testimonial position
+    function updateTestimonial() {
+        const slideWidth = 100 / itemsPerSlide;
+        wrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+        
+        // Update dots (only for mobile)
+        if (window.innerWidth < 768) {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+    }
+    
+    // Go to specific testimonial
+    function goToTestimonial(index) {
+        currentIndex = index;
+        updateTestimonial();
+    }
+    
+    // Next testimonial
+    function nextTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Previous testimonial
+    function prevTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex - 1 + maxIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', nextTestimonial);
+    prevBtn.addEventListener('click', prevTestimonial);
+    
+    // Auto-rotate testimonials
+    let interval = setInterval(nextTestimonial, 5000);
+    
+    // Pause on hover
+    wrapper.addEventListener('mouseenter', () => clearInterval(interval));
+    wrapper.addEventListener('mouseleave', () => {
+        interval = setInterval(nextTestimonial, 5000);
+    });
+    
+    // Touch events for mobile swipe
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    wrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        clearInterval(interval);
+    }, {passive: true});
+    
+    wrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        interval = setInterval(nextTestimonial, 5000);
+    }, {passive: true});
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextTestimonial();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevTestimonial();
+        }
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            nextTestimonial();
+        } else if (e.key === 'ArrowLeft') {
+            prevTestimonial();
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        updateItemsPerSlide();
+        // Recreate dots if switching between mobile and desktop
+        if (window.innerWidth >= 768 && dotsContainer.children.length > 0) {
+            dotsContainer.innerHTML = '';
+        } else if (window.innerWidth < 768 && dotsContainer.children.length === 0) {
+            testimonials.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (index === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => goToTestimonial(index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+    });
+    
+    // Initialize
+    updateItemsPerSlide();
+});
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            
+            let currentIndex = 0;
+            let slideInterval;
+            const slideDuration = 3000; // 3 seconds
+            
+            // Calculate how many slides to move based on screen size
+            function getSlidesToScroll() {
+                if (window.innerWidth < 768) return 1; // Mobile
+                if (window.innerWidth < 992) return 2; // Tablet
+                if (window.innerWidth < 1200) return 3; // Small desktop
+                return 4; // Large desktop
+            }
+            
+            // Update carousel position
+            function updateCarousel() {
+                const slideWidth = slides[0].offsetWidth;
+                const slidesToShow = Math.min(getSlidesToScroll(), slides.length);
+                const scrollPosition = currentIndex * slideWidth;
+                
+                track.style.transform = `translateX(-${scrollPosition}px)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Move to next slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            }
+            
+            // Start auto-sliding
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, slideDuration);
+            }
+            
+            // Pause auto-sliding when hovering
+            track.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            // Resume auto-sliding when not hovering
+            track.addEventListener('mouseleave', startAutoSlide);
+            
+            // Dot navigation
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.getAttribute('data-index'));
+                    updateCarousel();
+                    // Reset timer when manually navigating
+                    clearInterval(slideInterval);
+                    startAutoSlide();
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                updateCarousel();
+            });
+            
+            // Initialize
+            updateCarousel();
+            startAutoSlide();
+            
+            // Touch support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                clearInterval(slideInterval);
+            }, { passive: true });
+            
+            track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                startAutoSlide();
+            }, { passive: true });
+            
+            function handleSwipe() {
+                const threshold = 50;
+                if (touchEndX < touchStartX - threshold) {
+                    // Swipe left - next
+                    currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+                } else if (touchEndX > touchStartX + threshold) {
+                    // Swipe right - previous
+                    currentIndex = Math.max(currentIndex - 1, 0);
+                }
+                updateCarousel();
+            }
+        });
+    </script>
+</body>
+</html>

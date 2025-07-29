@@ -1,0 +1,3462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Cutting-Edge Software Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--External Css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+     
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+/* Navigation Styles */
+.navbar {
+    background-color: white;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.3rem 0.3rem;
+  }
+        
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+       
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.5rem;
+   }
+        
+ .nav-links li {
+      position: relative;
+     }
+        
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    padding: 0.4rem .6rem;
+    border-radius: 0.7rem;
+    font-size: 18px;
+    font-weight: bold;
+    }
+        
+.nav-links a:hover {
+    color: var(--primary);
+    background-color: var(--blue);
+
+   }
+        
+.nav-links a i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    }
+        
+
+ /* Basic styling for the advanced header */
+.advanced-header3 {
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-top-bar3 {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.container3 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info3 {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-item3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-item3 i {
+    font-size: 12px;
+}
+
+.contact-item3 a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.social-media2 {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media2 a {
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.social-media2 a:hover {
+    color: #3498db;
+}a
+
+@media screen and (max-width: 768px) {
+  .advanced-header3 {
+    display: none;
+  }
+}
+/* Mobile responsiveness would need to be added */
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.9rem;
+    color: var(--secondary);
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    }
+        
+.mobile-menu-btn:hover {
+    background-color: var(--gray-light);
+    }
+
+/* Mobile Navigation Styles */
+    @media (max-width: 992px) {
+     .nav-links {
+       position: fixed;
+       top: 50px;
+       left: -100%;
+       width: 280px;
+       height: calc(100vh - 80px);
+       background-color: white;
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 2rem;
+       transition: var(--transition);
+       box-shadow: var(--shadow-lg);
+       z-index: 999;
+       overflow-y: auto;
+      }
+            
+    .nav-links.active {
+          left: 0;
+      }
+            
+    .nav-links li {
+          margin: 0;
+          width: 100%;
+          padding: 0.5rem 0;
+          border-bottom: 1px solid var(--gray-light);
+        }
+            
+    .nav-links a {
+            padding: 0.8rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         
+    .dropdown-menu {
+          position: static;
+          box-shadow: none;
+          padding: 0;
+          opacity: 1;
+          visibility: visible;
+          display: none;
+          background-color: var(--gray-light);
+          border-radius: 0;
+          width: 100%;
+       }
+            
+    .dropdown-menu.active {
+        display: block;
+      }
+            
+    .dropdown-menu li {
+        padding: 0.8rem 1rem;
+        }
+            
+    .dropdown > a::after {
+          content: '\f078';
+          font-family: 'Font Awesome 6 Free';
+          font-weight: 900;
+          margin-left: 5px;
+          transition: transform 0.3s;
+         }
+            
+     .dropdown.active > a::after {
+        transform: rotate(180deg);
+        }
+            
+    .mobile-menu-btn {
+        display: block;
+        }
+    }
+
+
+
+
+.hero5 {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 105vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+
+
+        .hero-content1 h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero-content1 p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+/**End**/
+ 
+    .title2 {
+      font-size: 4rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #00dbde, #fc00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: fadeSlide 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+     .bounce-text {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #facc15;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: bounceIn 1s ease-out;
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      70% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .text-advanced {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      background: linear-gradient(to right, #8E2DE2, #4A00E0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      text-align: center;
+}
+
+
+.fancy-text2 {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #00DBDE, #FC00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowScale 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Keyframes */
+@keyframes glowScale {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+    text-shadow: none;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7),
+                 0 0 30px rgba(0, 255, 255, 0.4);
+  }
+}
+
+
+
+        /* Gallery Section */
+        .product-image {
+            height: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+
+        .gallery-section {
+            padding: 15px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: #ff6600;
+            bottom: -10px;
+            left: 25%;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background: none;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #666;
+            transition: all 0.3s;
+            border-radius: 30px;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10, 10, 10, .9), transparent);
+            padding: 20px;
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .bike-name {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: #ff6600;
+        }
+
+        .bike-price {
+            font-size: 1.2rem;
+            color: #ff6600;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .bike-specs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .bike-spec {
+            text-align: center;
+        }
+
+        .bike-spec i {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .view-details {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .view-details:hover {
+            background-color: #e65c00;
+        }
+
+.team-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+  position: relative;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+/* Decorative underline */
+.team-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  color: white;
+  background: linear-gradient(to right, #ff5722, #ff9800);
+  border-radius: 2px;
+}
+
+
+/*Animation effect on website*/
+.scroll-animation {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.9s ease-out, transform 0.3s ease-out;
+        }
+        
+        .scroll-animation.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+ .smart-call-button {
+            position: fixed;
+            bottom: 90px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: #FF3B30; /* Red */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: pulse-grow 2s infinite;
+        }
+        
+        .smart-call-button i {
+            color: white;
+            font-size: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        @keyframes pulse-grow {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(255, 59, 48, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
+            }
+        }
+        
+        .smart-call-button:hover {
+            animation: none;
+            transform: scale(1.1);
+            background-color: #FF1A1A;
+        }
+        
+        .smart-call-button:hover i {
+            transform: rotate(45deg);
+        }
+        
+        .call-confirmation {
+            position: absolute;
+            right: 80px;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        
+        .show-confirmation {
+            opacity: 1;
+        }
+/*End of animation on website */
+
+
+/*Faq Page*/
+       
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .tagline {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (min-width: 992px) {
+            .faq-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .faq-category {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary);
+        }
+        
+        .category-header {
+            background: var(--secondary);
+            color: white;
+            padding: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .faq-question:hover {
+            background: var(--light);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.8rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active::after {
+            content: '-';
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease;
+        }
+        
+        .faq-answer.show {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 1000px;
+        }
+        
+        .faq-answer p {
+            margin-bottom: 1rem;
+        }
+        
+        .faq-answer ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .specs-table th, .specs-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .specs-table th {
+            background-color: var(--light);
+        }
+        
+        .cta-banner {
+            text-align: center;
+            margin: 5rem 0;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--dark) 100%);
+            color: white;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-banner h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-banner p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 2.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: #C1121F;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        /*Video part of the team*/
+
+    .video-card {
+      background: #fff;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: scale(1.03);
+    }
+
+    .video-card video {
+      width: 100%;
+      display: block;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #555;
+    }
+
+/*Slider product show page goes here.........................*/
+        .slider-container1 {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+            position: relative;
+        }
+
+        .section-header1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .section-title111 {
+            font-size: 2.2rem;
+            color: var(--dark);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title111::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .slider-controls1 {
+            display: flex;
+            gap: 15px;
+        }
+
+        .control-btn1 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark);
+            transition: all 0.3s ease;
+        }
+
+        .control-btn1:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .sliderxx {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 10px 0;
+        }
+
+        .slider-track1 {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .slide1 {
+            flex: 0 0 25%;
+            padding: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        .card11 {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .card11:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .badge-container1 {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .badge1 {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .badge-discount1 {
+            background: var(--primary);
+        }
+
+        .badge-new1 {
+            background: var(--success);
+        }
+
+        .badge-featured {
+            background: var(--accent);
+        }
+
+        .favorite-btn1 {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            cursor: pointer;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        .favorite-btn1:hover {
+            color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        .favorite-btn1.active {
+            color: var(--primary);
+        }
+
+        .card-img-container {
+            height: auto;
+            width: 100%;
+            position: relative;
+            padding-top: 64%; /* 4:3 aspect ratio */
+            overflow: hidden;
+        }
+
+        .card-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-category {
+            font-size: 0.8rem;
+            color: var(--secondary);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .card-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-light);
+        }
+
+        .spec-item i {
+            margin-right: 5px;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .stars {
+            color: var(--accent);
+            margin-right: 8px;
+        }
+
+        .rating-count {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .price-container {
+            margin-bottom: 15px;
+        }
+
+        .current-price {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-right: 8px;
+        }
+
+        .original-price {
+            font-size: 1rem;
+            color: var(--text-light);
+            text-decoration: line-through;
+        }
+
+        .discount-percent {
+            font-size: 0.9rem;
+            color: var(--success);
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .card-actions1 {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #c1121f;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: var(--light);
+            color: var(--dark);
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+            transform: translateY(-2px);
+        }
+
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--primary);
+            transform: scale(1.2);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 1199px) {
+            .slide1 {
+                flex: 0 0 33.333%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .slide1 {
+                flex: 0 0 50%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .slider-container1 {
+                padding: 0 15px;
+            }
+
+            .slide1 {
+                flex: 0 0 100%;
+                padding: 0 10px;
+            }
+
+            .section-title111 {
+                font-size: 1.8rem;
+            }
+
+            .card-content {
+                padding: 15px;
+            }
+
+            .card-actions1 {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide1 {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .slide1:nth-child(1) { animation-delay: 0.1s; }
+        .slide1:nth-child(2) { animation-delay: 0.2s; }
+        .slide1:nth-child(3) { animation-delay: 0.3s; }
+        .slide1:nth-child(4) { animation-delay: 0.4s; }
+        .slide1:nth-child(5) { animation-delay: 0.5s; }
+        .slide1:nth-child(6) { animation-delay: 0.6s; }
+
+        /*End Of slider page here..*/
+
+
+    </style>
+</head>
+<body>
+
+<header class="advanced-header3">
+    <!-- Top bar with contact information -->
+    <div class="header-top-bar3">
+        <div class="container3">
+            <div class="contact-info3">
+                <div class="contact-item3">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Business Ave, Suite 456, Cityville, ST 12345</span>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+                </div>
+                <div class="contact-item3">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+1234567890">+91 7510028244</a>
+                </div>
+            </div>
+            
+            <div class="social-media2">
+                <a href="https://facebook.com/yourcompany" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/yourcompany" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/yourcompany" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/yourcompany" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</header>
+
+<!-- Navigation -->
+
+ <nav class="navbar">
+   <div class="nav-container">
+    <a href="index.php" class="logo">
+      <img src="img/bikelog.png" alt="TechNova Logo">
+        <span class="logo-text">BholeBike</span>
+    </a>
+            
+   <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+   </button>
+            
+   <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="new-bike.html">New Bike</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="online-booking.html">Online Booking</a></li>
+      <li><a href="contact.html">Contact Us</a></li>             
+      <li><a href="gallary.html">Gallary</a></li>
+    </ul>
+  </div>
+ </nav>
+
+
+<!-- Header with Slider -->
+<div class="container-fluid header2 ">
+  <!-- Slider Images -->
+    <div class="slider">
+        <div class="slide slide-1 active"></div>
+        <div class="slide slide-2"></div>
+        <div class="slide slide-3"></div>
+    </div>
+
+  <!-- Header Content -->
+    <div class="header-content">
+      <div class="hero-text">
+        <h1 >Hero MotoHub – Your Destination for Premium Two-Wheelers</h1>
+        <p>Hero Speed Kings – Experience the thrill of Hero's fastest bikes with expert maintenance and exclusive riding experiences.</p>
+                
+     <div class="btn-group">
+          <a href="tel:+11234567890" class="btn btn-primary">
+            <i class="fas fa-phone-alt"></i> Call Us Now
+          </a>
+          <a href="#" class="btn btn-outline">
+            <i class="fas fa-book-open"></i> Read More
+          </a>
+          </div>
+       </div>
+     </div>
+
+<!-- Slider Controls -->
+   <div class="slider-controls">
+      <div class="slider-control active" data-slide="0"></div>
+      <div class="slider-control" data-slide="1"></div>
+      <div class="slider-control" data-slide="2"></div>
+    </div>
+</div>
+
+
+
+<!-- Main Content -->
+<section class="bike-products">
+  <div class="products-container">
+   <!-- Product Card 1 -->
+     <div class="product-card scroll-animation" id="animated-box">
+      <span class="product-badge">Sale</span>
+        <div class="product-image">
+          <img src="img/moto3333.png" alt="Mountain Bike Pro">
+         </div>
+         <div class="product-content">
+          <span class="product-category">Mountain Bike</span>
+          <h3 class="product-title">Trailblazer XT Pro</h3>
+                    
+           <div class="rating">
+             <div class="stars">★★★★★</div>
+             <span class="review-count">(128)</span>
+           </div>
+                    
+         <div class="product-price">
+            <span class="current-price">Rs 1,12,000.0</span>
+            <span class="original-price">Rs 1,02,000.0</span>
+            <span class="discount">19% OFF</span>
+         </div>
+                    
+         <div class="product-actions">
+            <a href="show.php" class="btn3 btn-outline">View Details</a>
+            <a href="online_booking.php" class="btn3 btn-primary">Book Now</a>
+         </div>
+        </div>
+     </div>
+            
+    <!-- Product Card 2 -->
+     <div class="product-card scroll-animation">
+       <div class="product-image">
+        <img src="img/moto22.png" alt="Road Bike Elite">
+       </div>
+     <div class="product-content">
+        <span class="product-category">Road Bike</span>
+        <h3 class="product-title">Speedster Carbon Elite</h3>
+          <div class="rating">
+           <div class="stars">★★★★☆</div>
+           <span class="review-count">(86)</span>
+     </div>
+                    
+     <div class="product-price">
+      <span class="current-price">Rs 1,12,000.0</span>
+      <span class="original-price">Rs 1,10,000.0</span>
+      <span class="discount">11% OFF</span>
+     </div>
+                    
+     <div class="product-actions">
+            <a href="show.php" class="btn3 btn-outline">View Details</a>
+            <a href="online_booking.php" class="btn3 btn-primary">Book Now</a>
+     </div>
+    </div>
+</div>
+    <!-- Product Card 1 -->
+     <div class="product-card scroll-animation">
+       <span class="product-badge">Sale</span>
+       <div class="product-image">
+      <img src="img/moto23.png" alt="Mountain Bike Pro">
+    </div>
+    <div class="product-content">
+      <span class="product-category">Mountain Bike</span>
+        <h3 class="product-title">Trailblazer XT Pro</h3>
+                    
+        <div class="rating">
+         <div class="stars">★★★★★</div>
+         <span class="review-count">(128)</span>
+        </div>
+                    
+        <div class="product-price">
+         <span class="current-price">Rs 1,12,000.0</span>
+         <span class="original-price">Rs 1,09,000.0</span>
+         <span class="discount">19% OFF</span>
+        </div>
+                    
+      <div class="product-actions">
+            <a href="show.php" class="btn3 btn-outline">View Details</a>
+            <a href="online_booking.php" class="btn3 btn-primary">Book Now</a>
+      </div>
+     </div>
+    </div>
+            
+    <!-- Product Card 1 -->
+     <div class="product-card scroll-animation">
+       <span class="product-badge">Sale</span>
+          <div class="product-image">
+           <img src="img/moto234.png" alt="Mountain Bike Pro">
+          </div>
+        <div class="product-content">
+          <span class="product-category">Mountain Bike</span>
+            <h3 class="product-title">Trailblazer XT Pro</h3>
+                    
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+              <span class="review-count">(128)</span>
+        </div>
+                    
+        <div class="product-price">
+         <span class="current-price">Rs 1,12,000.0</span>
+         <span class="original-price">Rs 1,03,000.0</span>
+         <span class="discount">19% OFF</span>
+        </div>
+                    
+        <div class="product-actions">
+            <a href="show.php" class="btn3 btn-outline">View Details</a>
+            <a href="online_booking.php" class="btn3 btn-primary">Book Now</a>
+        </div>
+        </div>
+    </div>
+            
+    <!-- Product Card 1 -->
+    <div class="product-card scroll-animation">
+        <span class="product-badge">Sale</span>
+         <div class="product-image">
+           <img src="img/moto3232.png" alt="Mountain Bike Pro">
+        </div>
+        <div class="product-content">
+          <span class="product-category">Mountain Bike</span>
+          <h3 class="product-title">Trailblazer XT Pro</h3>
+                    
+          <div class="rating">
+            <div class="stars">★★★★★</div>
+            <span class="review-count">(128)</span>
+        </div>
+        
+        <div class="product-price">
+            <span class="current-price">Rs 1,12,000.0</span>
+            <span class="original-price">Rs 1,04,000.0</span>
+            <span class="discount">19% OFF</span>
+        </div>
+                    
+        <div class="product-actions">
+            <a href="show.php" class="btn3 btn-outline">View Details</a>
+            <a href="online_booking.php" class="btn3 btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+            
+  <!-- Product Card 3 -->
+  <div class="product-card scroll-animation">
+    <span class="product-badge">New</span>
+      <div class="product-image">
+        <img src="img/moto22.png" alt="Hybrid Bike">
+      </div>
+      <div class="product-content">
+        <span class="product-category">Hybrid Bike</span>
+        <h3 class="product-title">Urban Commuter LX</h3>
+              
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+            <span class="review-count">(42)</span>
+          </div>
+              
+        <div class="product-price">
+            <span class="current-price">Rs 1,12,000.0</span>
+            <span class="original-price">Rs 1,04,000.0</span>
+            <span class="discount">19% OFF</span>
+        </div>
+                    
+        <div class="product-actions">
+            <a href="show.php" class="btn3 btn-outline">View Details</a>
+            <a href="online_booking.php" class="btn3 btn-primary">Book Now</a>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+    <!-- End Main -->
+
+
+  <div class="slider-container1">
+        <div class="section-header1">
+            <h2 class="section-title111">Premium Bike Collection</h2>
+            <div class="slider-controls1">
+                <button class="control-btn1 prev-btn1"><i class="fas fa-chevron-left"></i></button>
+                <button class="control-btn1 next-btn1"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="sliderxx">
+            <div class="slider-track1">
+                <!-- Slide 1 -->
+                <div class="slide1">
+                    <div class="card11">
+                        <div class="badge-container1">
+                            <span class="badge1 badge-discount1">25% Off</span>
+                            <span class="badge1 badge-new1">New Model</span>
+                        </div>
+                        <button class="favorite-btn1"><i class="far fa-heart"></i></button>
+                        <div class="card-img-container">
+                            <img src="img/bike221.png"Sport Bike X1" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Sport Bikes</span>
+                            <h3 class="card-title">Sport Bike X1 Pro</h3>
+                            <div class="card-specs">
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 1000cc</span>
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 160 HP</span>
+                                <span class="spec-item"><i class="fas fa-weight"></i> 189 kg</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(128 reviews)</span>
+                            </div>
+                            <div class="price-container">
+                                <span class="current-price">$14,999</span>
+                                <span class="original-price">$19,999</span>
+                                <span class="discount-percent">Save $5,000</span>
+                            </div>
+                            <div class="card-actions1">
+                                <a href="show.php" style="text-decoration: none; color: white;padding: 3px;"  class="">
+                                <button class="btn btn-primary"> Visit Now</button></a>
+                                <button class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide1">
+                    <div class="card11">
+                        <div class="badge-container1" >
+                            <span class="badge1 badge-featured">Featured</span>
+                        </div>
+                        <button class="favorite-btn1"><i class="far fa-heart"></i></button>
+                        <div class="card-img-container">
+                            <img src="img/moto22.png" alt="Classic Cruiser" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Cruiser Bikes</span>
+                            <h3 class="card-title">Classic Cruiser Deluxe</h3>
+                            <div class="card-specs">
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 1800cc</span>
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 90 HP</span>
+                                <span class="spec-item"><i class="fas fa-weight"></i> 320 kg</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">(86 reviews)</span>
+                            </div>
+                            <div class="price-container">
+                                <span class="current-price">$22,499</span>
+                                <span class="original-price">$24,999</span>
+                                <span class="discount-percent">Save $2,500</span>
+                            </div>
+                            <div class="card-actions1">
+                                <a href="show.php" style="text-decoration: none; color: white;padding: 3px;"  class="">
+                                <button class="btn btn-primary"> Visit Now</button></a>
+                                <button class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide1">
+                    <div class="card11">
+                        <div class="badge-container1">
+                            <span class="badge1 badge-discount1">15% Off</span>
+                        </div>
+                        <button class="favorite-btn1"><i class="far fa-heart"></i></button>
+                        <div class="card-img-container">
+                            <img src="img/moto23.png" alt="Adventure Pro" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Adventure Bikes</span>
+                            <h3 class="card-title">Adventure Pro XT</h3>
+                            <div class="card-specs">
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 850cc</span>
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 95 HP</span>
+                                <span class="spec-item"><i class="fas fa-weight"></i> 230 kg</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(214 reviews)</span>
+                            </div>
+                            <div class="price-container">
+                                <span class="current-price">$12,749</span>
+                                <span class="original-price">$14,999</span>
+                                <span class="discount-percent">Save $2,250</span>
+                            </div>
+                            <div class="card-actions1">
+                                <a href="show.php" style="text-decoration: none; color: white;padding: 3px;"  class="">
+                                <button class="btn btn-primary"> Visit Now</button></a>
+                                <button class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide1">
+                    <div class="card11">
+                        <div class="badge-container1">
+                            <span class="badge1 badge-new1">New Arrival</span>
+                        </div>
+                        <button class="favorite-btn1"><i class="far fa-heart"></i></button>
+                        <div class="card-img-container">
+                            <img src="img/moto22.png" alt="Eco Electric" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Electric Bikes</span>
+                            <h3 class="card-title">Eco Electric Elite</h3>
+                            <div class="card-specs">
+                                <span class="spec-item"><i class="fas fa-battery-full"></i> 150mi range</span>
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 80 HP</span>
+                                <span class="spec-item"><i class="fas fa-charging-station"></i> Fast charge</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(167 reviews)</span>
+                            </div>
+                            <div class="price-container">
+                                <span class="current-price">$18,999</span>
+                            </div>
+                            <div class="card-actions1">
+                                <a href="show.php" style="text-decoration: none; color: white;padding: 3px;"  class="">
+                                <button class="btn btn-primary"> Visit Now</button></a>
+                                <button class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="slide1">
+                    <div class="card11">
+                        <button class="favorite-btn1"><i class="far fa-heart"></i></button>
+                        <div class="card-img-container">
+                            <img src="img/moto22.png" alt="Grand Tourer" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Touring Bikes</span>
+                            <h3 class="card-title">Grand Tourer Luxe</h3>
+                            <div class="card-specs">
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 1200cc</span>
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 110 HP</span>
+                                <span class="spec-item"><i class="fas fa-weight"></i> 280 kg</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">(92 reviews)</span>
+                            </div>
+                            <div class="price-container">
+                                <span class="current-price">$25,999</span>
+                            </div>
+                            <div class="card-actions1">
+                                <a href="show.php" style="text-decoration: none; color: white;padding: 3px;"  class="">
+                                <button class="btn btn-primary"> Visit Now</button></a>
+                                <button class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="slide1">
+                    <div class="card11">
+                        <div class="badge-container1">
+                            <span class="badge1 badge-discount1">30% Off</span>
+                        </div>
+                        <button class="favorite-btn1 active"><i class="fas fa-heart"></i></button>
+                        <div class="card-img-container">
+                            <img src="img/moto22.png" alt="Street Fighter" class="card-img">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">Naked Bikes</span>
+                            <h3 class="card-title">Street Fighter R</h3>
+                            <div class="card-specs">
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 950cc</span>
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 130 HP</span>
+                                <span class="spec-item"><i class="fas fa-weight"></i> 210 kg</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">(245 reviews)</span>
+                            </div>
+                            <div class="price-container">
+                                <span class="current-price">$10,499</span>
+                                <span class="original-price">$14,999</span>
+                                <span class="discount-percent">Save $4,500</span>
+                            </div>
+                            <div class="card-actions1">
+                                <a href="show.php" style="text-decoration: none; color: white;padding: 3px;"  class="">
+                                <button class="btn btn-primary"> Visit Now</button></a>
+                                <button class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Call Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliderTrack = document.querySelector('.slider-track1');
+            const slides = document.querySelectorAll('.slide1');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.querySelector('.prev-btn1');
+            const nextBtn = document.querySelector('.next-btn1');
+            const favoriteBtns = document.querySelectorAll('.favorite-btn1');
+            
+            let currentIndex = 0;
+            let slideCount = slides.length;
+            let slidesPerView = getSlidesPerView();
+            let autoSlideInterval;
+            
+            // Initialize slider
+            initSlider();
+            
+            function getSlidesPerView() {
+                if (window.innerWidth >= 1200) return 4;
+                if (window.innerWidth >= 992) return 3;
+                if (window.innerWidth >= 768) return 2;
+                return 1;
+            }
+            
+            function initSlider() {
+                updateSlidesPerView();
+                updateSliderPosition();
+                updateDots();
+                startAutoSlide();
+                setupEventListeners();
+            }
+            
+            function updateSlidesPerView() {
+                slidesPerView = getSlidesPerView();
+                const slideWidth = 100 / slidesPerView;
+                
+                slides.forEach(slide1 => {
+                    slide1.style.flex = `0 0 ${slideWidth}%`;
+                });
+            }
+            
+            function updateSliderPosition() {
+                const maxIndex = Math.max(slideCount - slidesPerView, 0);
+                currentIndex = Math.min(currentIndex, maxIndex);
+                const offset = -currentIndex * (100 / slidesPerView);
+                sliderTrack.style.transform = `translateX(${offset}%)`;
+            }
+            
+            function updateDots() {
+                const maxDots = Math.ceil(slideCount / slidesPerView);
+                const activeDot = Math.floor(currentIndex / slidesPerView);
+                
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === activeDot);
+                    dot.style.display = index < maxDots ? 'block' : 'none';
+                });
+            }
+            
+            function goToSlide(index) {
+                currentIndex = index * slidesPerView;
+                updateSliderPosition();
+                updateDots();
+            }
+            
+            function nextSlide() {
+                const maxIndex = Math.max(slideCount - slidesPerView, 0);
+                currentIndex = (currentIndex + 1) % (maxIndex + 1);
+                updateSliderPosition();
+                updateDots();
+                resetAutoSlide();
+            }
+            
+            function prevSlide() {
+                const maxIndex = Math.max(slideCount - slidesPerView, 0);
+                currentIndex = (currentIndex - 1 + maxIndex + 1) % (maxIndex + 1);
+                updateSliderPosition();
+                updateDots();
+                resetAutoSlide();
+            }
+            
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                startAutoSlide();
+            }
+            
+            function setupEventListeners() {
+                // Navigation buttons
+                nextBtn.addEventListener('click', nextSlide);
+                prevBtn.addEventListener('click', prevSlide);
+                
+                // Dot navigation
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => goToSlide(index));
+                });
+                
+                // Favorite buttons
+                favoriteBtns.forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        this.classList.toggle('active');
+                        const icon = this.querySelector('i');
+                        if (this.classList.contains('active')) {
+                            icon.classList.replace('far', 'fas');
+                            // Here you would typically send an AJAX request to save the favorite
+                        } else {
+                            icon.classList.replace('fas', 'far');
+                        }
+                    });
+                });
+                
+                // Book Now buttons
+                /*
+                document.querySelectorAll('.btn-primary').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const card11 = this.closest('.card11');
+                        const title = card11.querySelector('.card-title').textContent;
+                        alert(`Added ${title} to your booking cart!`);
+                    });
+                });
+                */
+                // Call Us buttons
+                document.querySelectorAll('.btn-secondary').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        alert('Calling our sales team at +1 (555) 123-4567');
+                    });
+                });
+                
+                // Window resize
+                window.addEventListener('resize', function() {
+                    updateSlidesPerView();
+                    updateSliderPosition();
+                    updateDots();
+                });
+                
+                // Pause on hover
+                const slider = document.querySelector('.sliderxx');
+                sliderxx.addEventListener('mouseenter', () => {
+                    clearInterval(autoSlideInterval);
+                });
+                
+                sliderxx.addEventListener('mouseleave', () => {
+                    resetAutoSlide();
+                });
+            }
+        });
+    </script>
+ <section class="gallery-section pt-5">
+        <div class="container p-0">
+            <!--
+            <div class="text-center mb-2">
+                <h2 class="display-4 fw-bold">Our Team</h2>
+                <p class="lead text-muted">Meet the talented individuals behind our success</p>
+            </div>
+             -->
+            
+            <div class="row g-4">
+                <!-- Team Member 1 -->
+                <div class="col-md-6 col-lg-4 ">
+                    <div class="gallery-card scroll-animation">
+                     <div class="video-card">
+                      <video autoplay loop muted playsinline>
+                       <source src="img/moto232.mp4" type="video/mp4">
+                       Your browser does not support the video tag.
+                      </video>
+                     </div>
+                        <div class="overlay">
+                            <h3>Alex Johnson</h3>
+                            <p>Creative Director</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-card scroll-animation">
+                     <div class="video-card">
+                       <video autoplay loop muted playsinline>
+                         <source src="img/moto2342.mp4" type="video/mp4">
+                         Your browser does not support the video tag.
+                       </video>
+
+                     </div>
+                        <div class="overlay">
+                            <h3>Maria Garcia</h3>
+                            <p>Lead Designer</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Team Member 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-card">
+                       <div class="video-card">
+                       <video autoplay loop muted playsinline>
+                       <source src="img/moto232.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                       </video>
+
+                    </div>
+                        <div class="overlay">
+                            <h3>James Wilson</h3>
+                            <p>Senior Developer</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-card">
+                     <div class="video-card">
+                     <video autoplay loop muted playsinline>
+                     <source src="img/moto223.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+
+                </div>
+                        <div class="overlay">
+                            <h3>Sarah Miller</h3>
+                            <p>Marketing Manager</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-card">
+                     <div class="video-card">
+                     <video autoplay loop muted playsinline>
+                      <source src="img/moto2342.mp4" type="video/mp4">
+                       Your browser does not support the video tag.
+                     </video>
+
+                    </div>
+                        <div class="overlay">
+                            <h3>David Kim</h3>
+                            <p>Product Manager</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-medium"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-card">
+                     <div class="video-card">
+                      <video autoplay loop muted playsinline>
+                       <source src="img/moto223.mp4" type="video/mp4">
+                       Your browser does not support the video tag.
+                       </video>
+
+                     </div>
+                        <div class="overlay">
+                            <h3>Emma Thompson</h3>
+                            <p>UX Researcher</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="container">
+        <div class="faq-grid">
+            <!-- Purchases Section -->
+            <div class="faq-category">
+                <div class="category-header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
+                    </svg>
+                    Motorcycle Purchases
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What financing options do you offer?</div>
+                    <div class="faq-answer">
+                        <p>We provide flexible financing solutions for all credit levels:</p>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Option</th>
+                                <th>Terms</th>
+                                <th>APR</th>
+                            </tr>
+                            <tr>
+                                <td>Premium Financing</td>
+                                <td>12-72 months</td>
+                                <td>3.99%-6.99%</td>
+                            </tr>
+                            <tr>
+                                <td>First-Time Buyer</td>
+                                <td>24-60 months</td>
+                                <td>7.99%-12.99%</td>
+                            </tr>
+                            <tr>
+                                <td>Seasonal Special</td>
+                                <td>6-12 months</td>
+                                <td>0% (qualifying models)</td>
+                            </tr>
+                        </table>
+                        <p><span class="highlight">Pre-approval available online</span> in 15 minutes without affecting your credit score.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What's included with a new motorcycle purchase?</div>
+                    <div class="faq-answer">
+                        <p>Every new bike comes with our <span class="highlight">MotoCare Premier Package</span>:</p>
+                        <ul>
+                            <li>Full dealer prep and inspection</li>
+                            <li>First service at 600 miles (free labor)</li>
+                            <li>2-year unlimited mileage warranty</li>
+                            <li>24/7 roadside assistance for first year</li>
+                            <li>Free delivery within 100 miles</li>
+                        </ul>
+                        <p>Ask about our extended warranty options at purchase.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you accept trade-ins?</div>
+                    <div class="faq-answer">
+                        <p>Yes! Our trade-in process is simple:</p>
+                        <ol>
+                            <li><span class="highlight">Online valuation:</span> Get an instant estimate on our website</li>
+                            <li><span class="highlight">In-person appraisal:</span> Bring your bike for detailed inspection</li>
+                            <li><span class="highlight">Trade bonus:</span> Get extra $500 on any working motorcycle</li>
+                        </ol>
+                        <p>We accept all makes/models in any condition. Even non-running bikes have value for parts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rentals Section -->
+            <div class="faq-category">
+                <div class="category-header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/>
+                    </svg>
+                    Motorcycle Rentals
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What are your rental requirements?</div>
+                    <div class="faq-answer">
+                        <p>To rent any motorcycle, you must:</p>
+                        <ul>
+                            <li>Be at least <span class="highlight">21 years old</span> (25 for premium models)</li>
+                            <li>Have a valid motorcycle license for 2+ years</li>
+                            <li>Provide proof of insurance or purchase our coverage</li>
+                            <li>Leave a $500-$2000 security deposit (varies by model)</li>
+                        </ul>
+                        <p>International renters need an International Driving Permit and passport.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What's included in the rental price?</div>
+                    <div class="faq-answer">
+                        <p>All rentals include:</p>
+                        <ul>
+                            <li>Unlimited mileage</li>
+                            <li>Helmet (full-face or modular)</li>
+                            <li>Basic insurance (collision damage waiver)</li>
+                            <li>24/7 roadside assistance</li>
+                            <li>Lock and disc brake alarm</li>
+                        </ul>
+                        <p>Optional add-ons:</p>
+                        <ul>
+                            <li>Premium insurance ($25/day - zero deductible)</li>
+                            <li>Passenger kit ($15/day - helmet and backrest)</li>
+                            <li>GPS navigation ($10/day)</li>
+                            <li>One-way rentals (available between select locations)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I rent a motorcycle for a cross-country trip?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We specialize in long-distance rentals with:</p>
+                        <ul>
+                            <li><span class="highlight">Weekly/monthly rates</span> with significant discounts</li>
+                            <li>Pre-planned touring routes with hotel partners</li>
+                            <li>Luggage systems available (hard cases or soft bags)</li>
+                            <li>Nationwide drop-off at partner locations</li>
+                        </ul>
+                        <p>Our <span class="highlight">Coast-to-Coast Package</span> includes 21 days unlimited mileage with emergency support along major routes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Section -->
+            <div class="faq-category">
+                <div class="category-header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M19.29 17.29L18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.93 6 11v5l-1.29 1.29c-.63.63-.19 1.71.7 1.71h13.17c.9 0 1.34-1.08.71-1.71zM16 17H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zm-4 5c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2z"/>
+                    </svg>
+                    Service & Repairs
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How often should I service my motorcycle?</div>
+                    <div class="faq-answer">
+                        <p>Recommended service intervals:</p>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Service Type</th>
+                                <th>Mileage/Time</th>
+                                <th>Typical Cost</th>
+                            </tr>
+                            <tr>
+                                <td>Basic Service</td>
+                                <td>Every 4,000 miles</td>
+                                <td>$150-$300</td>
+                            </tr>
+                            <tr>
+                                <td>Major Service</td>
+                                <td>Every 8,000 miles</td>
+                                <td>$400-$800</td>
+                            </tr>
+                            <tr>
+                                <td>Annual Check</td>
+                                <td>Every 12 months</td>
+                                <td>$100-$200</td>
+                            </tr>
+                        </table>
+                        <p>Severe riding conditions (dusty, rainy, or extreme temperatures) may require more frequent service.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you service all motorcycle brands?</div>
+                    <div class="faq-answer">
+                        <p>Our certified technicians work on:</p>
+                        <ul>
+                            <li>All Japanese brands (Honda, Yamaha, Kawasaki, Suzuki)</li>
+                            <li>European models (BMW, Ducati, Triumph, KTM)</li>
+                            <li>American motorcycles (Harley-Davidson, Indian)</li>
+                            <li>Most vintage bikes (pre-2000 models may require special parts)</li>
+                        </ul>
+                        <p>We use manufacturer-approved tools and software for all electronic diagnostics.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What's your turnaround time for repairs?</div>
+                    <div class="faq-answer">
+                        <p>Standard repair timelines:</p>
+                        <ul>
+                            <li><span class="highlight">Express services:</span> Same-day for oil changes and basic maintenance (when booked in advance)</li>
+                            <li><span class="highlight">Diagnostics:</span> 1-2 business days</li>
+                            <li><span class="highlight">Mechanical repairs:</span> 3-5 business days</li>
+                            <li><span class="highlight">Engine rebuilds:</span> 2-3 weeks</li>
+                        </ul>
+                        <p>Priority service available for an additional 25% fee (cuts wait times in half).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Safety Section -->
+            <div class="faq-category">
+                <div class="category-header">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11V11.99z"/>
+                    </svg>
+                    Safety & Training
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer motorcycle training courses?</div>
+                    <div class="faq-answer">
+                        <p>Yes! Our <span class="highlight">MotoAcademy</span> provides:</p>
+                        <ul>
+                            <li><span class="highlight">Beginner Course:</span> 2-day program with bike provided ($299)</li>
+                            <li><span class="highlight">Advanced Riding:</span> Skills enhancement for experienced riders ($399)</li>
+                            <li><span class="highlight">Track Days:</span> Supervised circuit training ($499/day)</li>
+                            <li><span class="highlight">Private Lessons:</span> One-on-one coaching ($120/hour)</li>
+                        </ul>
+                        <p>Successful completion of our beginner course waives the DMV skills test in most states.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What safety gear do you recommend?</div>
+                    <div class="faq-answer">
+                        <p>Our <span class="highlight">ATGATT</span> (All The Gear All The Time) policy recommends:</p>
+                        <ul>
+                            <li><span class="highlight">Helmet:</span> ECE/DOT certified full-face</li>
+                            <li><span class="highlight">Jacket:</span> Armored motorcycle-specific with abrasion-resistant material</li>
+                            <li><span class="highlight">Pants:</span> Kevlar-lined or leather with knee protection</li>
+                            <li><span class="highlight">Gloves:</span> Gauntlet style with palm sliders</li>
+                            <li><span class="highlight">Boots:</span> Ankle protection and oil-resistant soles</li>
+                        </ul>
+                        <p>We offer 10% discount on safety gear when purchased with any motorcycle.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I test ride before buying?</div>
+                    <div class="faq-answer">
+                        <p>Test ride policies:</p>
+                        <ul>
+                            <li><span class="highlight">Standard models:</span> 30-minute test rides available daily</li>
+                            <li><span class="highlight">Premium bikes:</span> By appointment only (requires proof of insurance)</li>
+                            <li><span class="highlight">Demo days:</span> Monthly events with full manufacturer lineups</li>
+                        </ul>
+                        <p>All test riders must:</p>
+                        <ol>
+                            <li>Have valid motorcycle license for 3+ years</li>
+                            <li>Wear proper safety gear (we provide if needed)</li>
+                            <li>Sign liability waiver</li>
+                            <li>Leave a refundable $500 deposit</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-banner">
+            <h2>Ready to Hit the Road?</h2>
+            <p>Whether you're looking to buy, rent, or service your motorcycle, our experts are here to help you with every aspect of your riding experience.</p>
+            <button class="cta-button">Schedule an Appointment</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isActive = question.classList.contains('active');
+                    
+                    // Close all other answers in the same category
+                    const category = question.closest('.faq-category');
+                    category.querySelectorAll('.faq-question').forEach(q => {
+                        if (q !== question) {
+                            q.classList.remove('active');
+                            q.nextElementSibling.classList.remove('show');
+                        }
+                    });
+                    
+                    // Toggle current answer
+                    question.classList.toggle('active');
+                    answer.classList.toggle('show');
+                });
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+      
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title2">
+                <h2 class="title2" style="font-size:35px;">Our Motorcycle Collection</h2>
+                <p style="font-size: 20px;text-align: center;">Browse through our premium selection of motorcycles from the world's leading manufacturers.</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Models</button>
+                <button class="filter-btn" data-filter="sport">Sport Bikes</button>
+                <button class="filter-btn" data-filter="cruiser">Cruisers</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+                <button class="filter-btn" data-filter="touring">Touring</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Bike 1 -->
+                <div class="gallery-item" data-category="sport">
+                    <img src="img/moto22.png" alt="Sport Bike 1" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Speedster R1</h3>
+                        <div class="bike-price">$18,999</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>180 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>200 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>420 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Bike 2 -->
+                <div class="gallery-item" data-category="cruiser">
+                    <img src="img/moto23.png" alt="Cruiser Bike" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Road King Classic</h3>
+                        <div class="bike-price">$22,499</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>120 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>110 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>750 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Bike 3 -->
+                <div class="gallery-item" data-category="adventure">
+                    <img src="img/moto234.png" alt="Adventure Bike" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Explorer 850</h3>
+                        <div class="bike-price">$15,799</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>130 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>95 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>480 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Bike 4 -->
+                <div class="gallery-item" data-category="touring">
+                    <img src="img/moto22.png" alt="Touring Bike" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Grand Tourer</h3>
+                        <div class="bike-price">$27,999</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>150 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>125 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>850 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Bike 5 -->
+                <div class="gallery-item" data-category="sport">
+                    <img src="img/moto22.png" alt="Sport Bike 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Thunderbolt S</h3>
+                        <div class="bike-price">$21,499</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>190 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>210 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>410 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Bike 6 -->
+                <div class="gallery-item" data-category="cruiser">
+                    <img src="img/moto234.png" alt="Cruiser Bike 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Iron Steed</h3>
+                        <div class="bike-price">$16,899</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>110 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>90 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>680 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+                                <!-- Bike 6 -->
+                <div class="gallery-item" data-category="cruiser">
+                    <img src="img/moto22.png" alt="Cruiser Bike 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Iron Steed</h3>
+                        <div class="bike-price">$16,899</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>110 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>90 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>680 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+                                <!-- Bike 6 -->
+                <div class="gallery-item" data-category="cruiser">
+                    <img src="img/moto3333.png" alt="Cruiser Bike 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Iron Steed</h3>
+                        <div class="bike-price">$16,899</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>110 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>90 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>680 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+                                <!-- Bike 6 -->
+                <div class="gallery-item" data-category="cruiser">
+                    <img src="img/moto234.png" alt="Cruiser Bike 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Iron Steed</h3>
+                        <div class="bike-price">$16,899</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>110 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>90 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>680 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+                                <!-- Bike 6 -->
+                <div class="gallery-item" data-category="cruiser">
+                    <img src="img/moto3232.png" alt="Cruiser Bike 2" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="bike-name">Iron Steed</h3>
+                        <div class="bike-price">$16,899</div>
+                        <div class="bike-specs">
+                            <div class="bike-spec">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>110 mph</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-horse-head"></i>
+                                <span>90 HP</span>
+                            </div>
+                            <div class="bike-spec">
+                                <i class="fas fa-weight"></i>
+                                <span>680 lbs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="view-details">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+            <!-- Content sections would go here -->
+      <section class="testimonial-section ">
+        <div class="container">
+            <h2 class="section-title3 title2" style="color:white; font-size: 40px;">What Our Clients Say</h2>
+            <p class="section-subtitle" style="color:white;">Don't just take our word for it - hear from some of our amazing clients.</p>
+            
+            <div class="testimonial-container" >
+                <div class="testimonial-wrapper" >
+                    <!-- Testimonial items will be added dynamically by JavaScript -->
+                </div>
+                
+                <div class="testimonial-nav">
+                    <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots"></div>
+                    <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="bike-gallery py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4  highlight-text2 bounce-text">Premium Bikes Collection</h1>
+                <p class="lead text-muted text-advanced">Explore the finest bikes with cutting-edge design</p>
+            </div>
+
+            <div class="row g-2">
+                <!-- Bike 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bike-card">
+                        <div class="bike-img">
+                            <img src="img/bike2323.jpg" 
+                                 alt="Sport Bike" class="img-fluid">
+                        </div>
+                        <div class="bike-overlay">
+                            <h3>Sport Bike</h3>
+                            <p>Speed | Agility | Performance</p>
+                            <button class="btn btn-outline-light">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bike 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bike-card">
+                        <div class="bike-img">
+                            <img src="img/bike221.png" 
+                                 alt="Adventure Bike" class="img-fluid">
+                        </div>
+                        <div class="bike-overlay">
+                            <h3>Adventure Bike</h3>
+                            <p>Off-road | Durability | Exploration</p>
+                            <button class="btn btn-outline-light">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bike 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bike-card">
+                        <div class="bike-img">
+                            <img src="img/bike22.png" 
+                                 alt="Classic Bike" class="img-fluid">
+                        </div>
+                        <div class="bike-overlay">
+                            <h3>Classic Bike</h3>
+                            <p>Vintage | Style | Elegance</p>
+                            <button class="btn btn-outline-light">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bike 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bike-card">
+                        <div class="bike-img">
+                            <img src="img/bike221.png" 
+                                 alt="Electric Bike" class="img-fluid">
+                        </div>
+                        <div class="bike-overlay">
+                            <h3>Electric Bike</h3>
+                            <p>Eco-friendly | Silent | Efficient</p>
+                            <button class="btn btn-outline-light">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bike 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bike-card">
+                        <div class="bike-img">
+                            <img src="img/bike22.png" 
+                                 alt="Cruiser Bike" class="img-fluid">
+                        </div>
+                        <div class="bike-overlay">
+                            <h3>Cruiser Bike</h3>
+                            <p>Comfort | Relaxed Ride | Long Journeys</p>
+                            <button class="btn btn-outline-light">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bike 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="bike-card">
+                        <div class="bike-img">
+                            <img src="img/bike2323.jpg" 
+                                 alt="Mountain Bike" class="img-fluid">
+                        </div>
+                        <div class="bike-overlay">
+                            <h3>Mountain Bike</h3>
+                            <p>Trail | Suspension | Rugged</p>
+                            <button class="btn btn-outline-light">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="container-fluid ">
+                <h2 class="team-title" style="color:white;">Meet The Team</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="img/team11.jpg" alt="Derek Velocity">
+                    </div>
+                    <div class="member-info">
+                        <h3>Derek Velocity</h3>
+                        <p>Founder & CEO</p>
+                        <p>3-time National Racing Champion</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="img/team12.jpg" alt="Maria Rodriguez">
+                    </div>
+                    <div class="member-info">
+                        <h3>Maria Rodriguez</h3>
+                        <p>Sales Director</p>
+                        <p>Adventure Touring Specialist</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="img/team13.jpg" alt="James Wilson">
+                    </div>
+                    <div class="member-info">
+                        <h3>James Wilson</h3>
+                        <p>Head Technician</p>
+                        <p>20+ Years Experience</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bike-features">
+        <div class="section-header">
+            <h2 class="title2">Premium Bike Features</h2>
+            <p class="text-advanced" style="color:black;font-size: 14px;">Discover the cutting-edge technology and premium craftsmanship that sets our bikes apart from the competition.</p>
+        </div>
+        
+        <div class="features-container">
+            <!-- Feature 1 -->
+            <div class="feature-card" style="box-shadow: 5px 2px #ff6600;border:1px solid midnightblue; background: white;">
+                <div class="feature-image">
+                    <img src="img/bike221.png" alt="Carbon Fiber Frame">
+                </div>
+                <div class="feature-content">
+                    <span class="feature-badge">Innovation</span>
+                    <h3>Carbon Fiber Frame</h3>
+                    <p>Dike Bike Agency offers a wide range of premium motorcycles and scooters, perfect for every kind of rider—from daily commuters to adventure seekers. Quality, trust, and performance in every ride.</p>
+                    <a href="#" class="cta-button">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-card" style="box-shadow: 5px 2px #ff6600; border:1px solid midnightblue;">
+                <div class="feature-image">
+                    <img src="img/bike221.png" alt="Hydraulic Disc Brakes">
+                </div>
+                <div class="feature-content">
+                    <span class="feature-badge">Safety</span>
+                    <h3>Hydraulic Disc Brakes</h3>
+                    <p>SpeedTrail Bikes is your go-to destination for high-performance bikes, accessories, and maintenance support. Whether you're hitting the highway or the hills, we've got you covered.</p>
+                    <a href="#" class="cta-button">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-card" style="box-shadow: 5px 2px #ff6600; border:1px solid midnightblue;">
+                <div class="feature-image">
+                    <img src="img/bike221.png" alt="Electronic Shifting">
+                </div>
+                <div class="feature-content">
+                    <span class="feature-badge">Technology</span>
+                    <h3>Electronic Shifting</h3>
+                    <p>Rider’s Choice Agency specializes in both sales and rentals of top-tier bikes. With our expert team and competitive pricing, we make owning a dream bike easier than ever.</p>
+                    <a href="#" class="cta-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<div class="container-fluid">
+<div class="container">
+            <h2>Find Us on Map</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.366785720549!2d77.2098653150824!3d28.62873998242203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1629876543210!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+</div>
+
+
+<!-- End main -->
+<!-- Footer -->
+  <footer>
+    <div class="footer-wave"></div>
+      <div class="footer-container">
+          <div class="footer-logo-col">
+            <a href="#" class="footer-logo">
+                <img src="img/bikelog.png" alt="TechNova Logo">
+                <span class="footer-logo-text">BikeWalaa</span>
+            </a>
+            <p class="footer-about">
+              <strong>BholeBike</strong>Founded in 2008 by racing champion Derek Velocity, our agency began as a small boutique specializing in high-performance sport bikes. What started as a one-man operation in a garage has grown into a 20,000 sq ft state-of-the-art facility representing the world's finest motorcycle brands.
+
+ 
+            </p>
+            <div class="social-links">
+             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+             <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+            
+        <div class="footer-col">
+         <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Solutions</a></li>
+           <li><a href="#">Case Studies</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+             <ul class="footer-links">
+              <li><a href="#">Bike Service</a></li>
+              <li><a href="#">New Bike</a></li>
+              <li><a href="#">Sport Bike</a></li>
+              <li><a href="#">Latest Bike</a></li>
+              <li><a href="#">team</a></li>
+          </ul>
+         </div>
+            
+         <div class="footer-col">
+          <h3 class="footer-heading">Contact Us</h3>
+           <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Tech Park, Silicon Valley, CA 94025</p>
+            <p><i class="fas fa-phone-alt"></i> *91 7510028244</p>
+            <p><i class="fas fa-envelope"></i> bholebike@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2023 TechNova Solutions. All rights reserved.</p>
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+    </footer>
+    <div class="smart-call-button" id="callButton">
+        <i class="fas fa-phone"></i>
+        <div class="call-confirmation" id="callConfirmation">Calling...</div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Dropdown Menu Toggle for Mobile
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('a');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 992) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    menu.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                            otherDropdown.querySelector('.dropdown-menu').classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992 && !e.target.closest('.dropdown') && !e.target.closest('.mobile-menu-btn')) {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                    dropdown.querySelector('.dropdown-menu').classList.remove('active');
+                });
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        const navItems = document.querySelectorAll('.nav-links li:not(.dropdown) a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // Slider Functionality
+        const slides = document.querySelectorAll('.slide');
+        const controls = document.querySelectorAll('.slider-control');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            controls.forEach(control => control.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            controls[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = currentSlide + 1;
+            if (next >= slides.length) next = 0;
+            showSlide(next);
+        }
+
+        function startSlider() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+
+        // Initialize slider
+        showSlide(0);
+        startSlider();
+
+        // Add click events to controls
+        controls.forEach((control, index) => {
+            control.addEventListener('click', () => {
+                stopSlider();
+                showSlide(index);
+                startSlider();
+            });
+        });
+
+        // Pause on hover
+        const slider = document.querySelector('.slider');
+        slider.addEventListener('mouseenter', stopSlider);
+        slider.addEventListener('mouseleave', startSlider);
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Testimonial data
+    const testimonials = [
+        {
+            text: "This product completely transformed my workflow. The ease of use and powerful features have saved me countless hours of work.",
+            author: "Sarah Johnson",
+            position: "Marketing Director",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/43.jpg"
+        },
+        {
+            text: "Excellent customer service and a top-notch product. The team was incredibly responsive to our needs.",
+            author: "Michael Chen",
+            position: "CTO",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+            text: "I was skeptical at first, but after using it for just one week, I was completely sold. The ROI has been phenomenal.",
+            author: "Emily Rodriguez",
+            position: "Project Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/women/65.jpg"
+        },
+        {
+            text: "The best solution in its category. We evaluated several competitors but none came close to this product.",
+            author: "David Wilson",
+            position: "Operations Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/75.jpg"
+        },
+        {
+            text: "Simple to set up and incredibly powerful. We've automated processes that used to take days, now completed in minutes.",
+            author: "Lisa Thompson",
+            position: "Sales Executive",
+            rating: 4,
+            image: "https://randomuser.me/api/portraits/women/22.jpg"
+        },
+        {
+            text: "The support team is outstanding. They helped us customize the solution to our exact business needs.",
+            author: "Robert Garcia",
+            position: "IT Manager",
+            rating: 5,
+            image: "https://randomuser.me/api/portraits/men/46.jpg"
+        }
+    ];
+
+    const wrapper = document.querySelector('.testimonial-wrapper');
+    const dotsContainer = document.querySelector('.testimonial-dots');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentIndex = 0;
+    let itemsPerSlide = 1; // Default for mobile
+    
+    // Determine items per slide based on screen size
+    function updateItemsPerSlide() {
+        if (window.innerWidth >= 992) {
+            itemsPerSlide = 3; // Desktop
+        } else if (window.innerWidth >= 768) {
+            itemsPerSlide = 2; // Tablet
+        } else {
+            itemsPerSlide = 1; // Mobile
+        }
+        updateTestimonial();
+    }
+    
+    // Create testimonial items
+    testimonials.forEach((testimonial, index) => {
+        // Create testimonial item
+        const item = document.createElement('div');
+        item.className = 'testimonial-item';
+        
+        // Create rating stars
+        let stars = '';
+        for (let i = 0; i < 5; i++) {
+            stars += i < testimonial.rating 
+                ? '<i class="fas fa-star"></i>' 
+                : '<i class="far fa-star"></i>';
+        }
+        
+        item.innerHTML = `
+            <div class="testimonial-content">
+                <p class="testimonial-text">${testimonial.text}</p>
+                <div class="testimonial-author">
+                    <img src="${testimonial.image}" alt="${testimonial.author}" class="author-img">
+                    <div class="author-info">
+                        <h4>${testimonial.author}</h4>
+                        <p>${testimonial.position}</p>
+                        <div class="testimonial-rating">${stars}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        wrapper.appendChild(item);
+        
+        // Create dots (only for mobile)
+        if (window.innerWidth < 768) {
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToTestimonial(index));
+            dotsContainer.appendChild(dot);
+        }
+    });
+    
+    const items = document.querySelectorAll('.testimonial-item');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Update testimonial position
+    function updateTestimonial() {
+        const slideWidth = 100 / itemsPerSlide;
+        wrapper.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+        
+        // Update dots (only for mobile)
+        if (window.innerWidth < 768) {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+    }
+    
+    // Go to specific testimonial
+    function goToTestimonial(index) {
+        currentIndex = index;
+        updateTestimonial();
+    }
+    
+    // Next testimonial
+    function nextTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Previous testimonial
+    function prevTestimonial() {
+        const maxIndex = Math.ceil(items.length / itemsPerSlide) - 1;
+        currentIndex = (currentIndex - 1 + maxIndex + 1) % (maxIndex + 1);
+        updateTestimonial();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', nextTestimonial);
+    prevBtn.addEventListener('click', prevTestimonial);
+    
+    // Auto-rotate testimonials
+    let interval = setInterval(nextTestimonial, 5000);
+    
+    // Pause on hover
+    wrapper.addEventListener('mouseenter', () => clearInterval(interval));
+    wrapper.addEventListener('mouseleave', () => {
+        interval = setInterval(nextTestimonial, 5000);
+    });
+    
+    // Touch events for mobile swipe
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    wrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        clearInterval(interval);
+    }, {passive: true});
+    
+    wrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        interval = setInterval(nextTestimonial, 5000);
+    }, {passive: true});
+    
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextTestimonial();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevTestimonial();
+        }
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            nextTestimonial();
+        } else if (e.key === 'ArrowLeft') {
+            prevTestimonial();
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        updateItemsPerSlide();
+        // Recreate dots if switching between mobile and desktop
+        if (window.innerWidth >= 768 && dotsContainer.children.length > 0) {
+            dotsContainer.innerHTML = '';
+        } else if (window.innerWidth < 768 && dotsContainer.children.length === 0) {
+            testimonials.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (index === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => goToTestimonial(index));
+                dotsContainer.appendChild(dot);
+            });
+        }
+    });
+    
+    // Initialize
+    updateItemsPerSlide();
+});
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            
+            let currentIndex = 0;
+            let slideInterval;
+            const slideDuration = 3000; // 3 seconds
+            
+            // Calculate how many slides to move based on screen size
+            function getSlidesToScroll() {
+                if (window.innerWidth < 768) return 1; // Mobile
+                if (window.innerWidth < 992) return 2; // Tablet
+                if (window.innerWidth < 1200) return 3; // Small desktop
+                return 4; // Large desktop
+            }
+            
+            // Update carousel position
+            function updateCarousel() {
+                const slideWidth = slides[0].offsetWidth;
+                const slidesToShow = Math.min(getSlidesToScroll(), slides.length);
+                const scrollPosition = currentIndex * slideWidth;
+                
+                track.style.transform = `translateX(-${scrollPosition}px)`;
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Move to next slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
+            }
+            
+            // Start auto-sliding
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, slideDuration);
+            }
+            
+            // Pause auto-sliding when hovering
+            track.addEventListener('mouseenter', () => {
+                clearInterval(slideInterval);
+            });
+            
+            // Resume auto-sliding when not hovering
+            track.addEventListener('mouseleave', startAutoSlide);
+            
+            // Dot navigation
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentIndex = parseInt(dot.getAttribute('data-index'));
+                    updateCarousel();
+                    // Reset timer when manually navigating
+                    clearInterval(slideInterval);
+                    startAutoSlide();
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                updateCarousel();
+            });
+            
+            // Initialize
+            updateCarousel();
+            startAutoSlide();
+            
+            // Touch support for mobile
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            track.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                clearInterval(slideInterval);
+            }, { passive: true });
+            
+            track.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                startAutoSlide();
+            }, { passive: true });
+            
+            function handleSwipe() {
+                const threshold = 50;
+                if (touchEndX < touchStartX - threshold) {
+                    // Swipe left - next
+                    currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+                } else if (touchEndX > touchStartX + threshold) {
+                    // Swipe right - previous
+                    currentIndex = Math.max(currentIndex - 1, 0);
+                }
+                updateCarousel();
+            }
+        });
+    </script>
+
+        <script>
+
+        // Filter Gallery Items
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.scroll-animation');
+            
+            function checkIfInView() {
+                animatedElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('animate');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', checkIfInView);
+            checkIfInView(); // Check on initial load
+        });
+    </script>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const callButton = document.getElementById('callButton');
+            const callConfirmation = document.getElementById('callConfirmation');
+            
+            callButton.addEventListener('click', function(e) {
+                // Prevent default if you want to handle the call differently
+                // e.preventDefault();
+                
+                // Show confirmation
+                callConfirmation.classList.add('show-confirmation');
+                
+                // Hide after 2 seconds
+                setTimeout(() => {
+                    callConfirmation.classList.remove('show-confirmation');
+                }, 2000);
+                
+                // Here you could add analytics tracking
+                console.log('Call button clicked');
+                
+                // If not using default tel: link behavior
+                // window.location.href = 'tel:+1234567890';
+            });
+        });
+    </script>
+</body>
+</html>
