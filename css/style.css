@@ -30,7 +30,8 @@ body {
     line-height: 1.6;
     color: var(--dark);
     background-color: #fff;
-    overflow-x: hidden;
+    overflow-x: none;
+
 }
 
 /*Start Of Header*/
