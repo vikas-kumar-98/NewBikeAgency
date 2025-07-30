@@ -226,75 +226,191 @@
         }
     }
 
-                /* About Section */
-        .about {
-            padding: 20px 0;
-            background-color: var(--light);
-        }
-        
-        .about-content {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 50px;
-        }
-        
-        .about-text {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .about-text h3 {
-            font-size: 2rem;
-            color: var(--secondary);
-            margin-bottom: 20px;
-        }
-        
-        .about-text p {
-            margin-bottom: 20px;
-        }
-        
-        .about-image {
-            flex: 1;
-            min-width: 300px;
-            position: relative;
-        }
-        
-        .about-img-main {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-        
-        .about-img-badge {
-            position: absolute;
-            bottom: -30px;
-            right: -30px;
-            background: var(--primary);
-            color: white;
-            padding: 30px;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .about-img-badge span:first-child {
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-        
-        .about-img-badge span:last-child {
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
+ /* About Section */
+.about {
+    padding: 20px 0;
+    background-color: var(--light);
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.about-img-main {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-img-badge {
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+    background: var(--primary);
+    color: white;
+    padding: 30px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-img-badge span:first-child {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.about-img-badge span:last-child {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+    .about-content {
+        gap: 40px;
+    }
+    
+    .about-img-badge {
+        width: 130px;
+        height: 130px;
+        padding: 25px;
+    }
+    
+    .about-img-badge span:first-child {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        gap: 30px;
+    }
+    
+    .about-img-badge {
+        width: 120px;
+        height: 120px;
+        padding: 20px;
+        bottom: -20px;
+        right: -20px;
+    }
+    
+    .about-img-badge span:first-child {
+        font-size: 2rem;
+    }
+    
+    .about-img-badge span:last-child {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .about-text, .about-image {
+        flex: none;
+        width: 100%;
+    }
+    
+    .about-img-badge {
+        width: 110px;
+        height: 110px;
+        padding: 15px;
+        bottom: -15px;
+        right: -15px;
+    }
+    
+    .about-img-badge span:first-child {
+        font-size: 1.8rem;
+    }
+    
+    .about-img-badge span:last-child {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        padding: 15px 0;
+    }
+    
+    .about-text h3 {
+        font-size: 1.8rem;
+    }
+    
+    .about-img-badge {
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+        bottom: -10px;
+        right: -10px;
+    }
+    
+    .about-img-badge span:first-child {
+        font-size: 1.5rem;
+    }
+    
+    .about-img-badge span:last-child {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-text {
+        min-width: 100%;
+    }
+    
+    .about-image {
+        min-width: 100%;
+    }
+    
+    .about-img-badge {
+        width: 80px;
+        height: 80px;
+        padding: 8px;
+    }
+    
+    .about-img-badge span:first-child {
+        font-size: 1.3rem;
+    }
+    
+    .about-img-badge span:last-child {
+        font-size: 0.6rem;
+    }
+}        
         /* Features Section */
         .features {
             padding: 100px 0;
@@ -782,7 +898,7 @@
                     <img src="img/team12.jpg" alt="Velocity Motors Showroom" class="about-img-main">
                     <div class="about-img-badge" style="background-color: darkblue; box-shadow: 4px 1px yellow;">
                         <span>15+</span>
-                        <span style="font-size: 13px;">Years Experience</span>
+                        <span style="font-size: 10px;">Years Experience</span>
                     </div>
                 </div>
             </div>
