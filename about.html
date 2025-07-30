@@ -881,6 +881,84 @@
   box-shadow: 0 0 10px #00c6ff;
 }
 
+/*Animation effect on website*/
+.scroll-animation {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.9s ease-out, transform 0.3s ease-out;
+        }
+        
+        .scroll-animation.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+ .smart-call-button {
+            position: fixed;
+            bottom: 90px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: #FF3B30; /* Red */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: pulse-grow 2s infinite;
+        }
+        
+        .smart-call-button i {
+            color: white;
+            font-size: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        @keyframes pulse-grow {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(255, 59, 48, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
+            }
+        }
+        
+        .smart-call-button:hover {
+            animation: none;
+            transform: scale(1.1);
+            background-color: #FF1A1A;
+        }
+        
+        .smart-call-button:hover i {
+            transform: rotate(45deg);
+        }
+        
+        .call-confirmation {
+            position: absolute;
+            right: 80px;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        
+        .show-confirmation {
+            opacity: 1;
+        }
+/*End of animation on website */
 
     </style>
 </head>
